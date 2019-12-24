@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/detail_bg"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/cross"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/heart"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="115dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ctv_pro_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/ctv_location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/grey_300" />
+
+            <open_source.com.dachshundtablayout.DachshundTabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:tabTextAppearance="@style/CustomTextAppearance"
+                custom:ddAnimatedIndicator="dachshund"
+                custom:ddIndicatorColor="@color/colorPrimary"
+                custom:ddIndicatorHeight="6dp"
+                custom:tabMode="fixed"
+                custom:tabSelectedTextColor="@color/colorPrimary"
+                custom:tabTextColor="@color/black" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_tab"
+        custom:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</RelativeLayout>

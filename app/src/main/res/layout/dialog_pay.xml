@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            app:cardElevation="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Payment Offer"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_paypal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/btn_green"
+            android:text="@string/paypal"
+            android:textColor="@color/white"
+            app:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/round_btn_solid"
+            android:text="@string/credit_debit"
+            android:textColor="@color/white"
+            app:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/btn_ach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:background="@drawable/btn_black"
+            android:text="@string/ach_payment"
+            android:textColor="@color/white"
+            app:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_cross"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/crossblack" />
+    <!-- <ImageView
+         android:id="@+id/cross"
+         android:layout_width="@dimen/_35sdp"
+         android:layout_height="@dimen/_35sdp"
+         android:layout_gravity="right"
+         android:background="@drawable/crossblack" />-->
+
+
+</RelativeLayout>

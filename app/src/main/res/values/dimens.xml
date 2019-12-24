@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">40dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <!--Step Indicator-->
+    <dimen name="stpi_default_circle_radius">10dp</dimen>
+    <dimen name="stpi_default_circle_stroke_width">4dp</dimen>
+    <dimen name="stpi_default_indicator_radius">4dp</dimen>
+    <dimen name="stpi_default_line_stroke_width">2dp</dimen>
+    <dimen name="stpi_default_line_margin">5dp</dimen>
+
+    <dimen name="stpi_default_text_size">12sp</dimen>
+
+    <dimen name="stpi_default_bottom_indicator_height">3dp</dimen>
+    <dimen name="stpi_default_bottom_indicator_width">50dp</dimen>
+    <dimen name="stpi_default_bottom_indicator_margin_top">10dp</dimen>
+
+    <dimen name="stpi_default_label_size">12sp</dimen>
+    <dimen name="stpi_default_label_margin_top">2dp</dimen>
+
+    <dimen name="stpi_two_dp">2dp</dimen>
+    <dimen name="stpi_done_icon_size">18dp</dimen>
+
+    <dimen name="standard_12">12dp</dimen>
+    <dimen name="standard_23">23dp</dimen>
+    <dimen name="standard_55">55dp</dimen>
+    <dimen name="standard_100">100dp</dimen>
+    <dimen name="standard_145">145dp</dimen>
+    <dimen name="standard_190">190dp</dimen>
+    <dimen name="standard_235">235dp</dimen>
+    <dimen name="standard_280">280dp</dimen>
+    <dimen name="standard_330">330</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+   <dimen name="design_bottom_navigation_active_text_size" tools:override="true">13sp</dimen>
+
+
+
+</resources>

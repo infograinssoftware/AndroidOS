@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:background="@color/white"
+    android:elevation="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:contentPadding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="8769486"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/txt_work_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy"
+            android:layout_below="@+id/txt_amount"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/lay_status"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/txt_work_description">
+
+            <Button
+                android:id="@+id/btn_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:text="@string/paid"
+                android:clickable="false"
+                android:background="@drawable/round_btn_solid"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_unpaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button_fad"
+                android:textAllCaps="false"
+                android:text="@string/unpaid"
+                android:clickable="false"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/grey"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="end"
+            android:text="vnxbmnbvxmbv"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@+id/txt_work_description"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

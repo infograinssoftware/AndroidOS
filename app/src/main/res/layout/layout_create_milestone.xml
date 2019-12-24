@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/work_description"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+    <EditText
+        android:id="@+id/et_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:lines="8"
+        android:inputType="textMultiLine"
+        android:gravity="left"
+        android:padding="@dimen/_5sdp"
+        android:maxLength="350"
+        android:textSize="@dimen/_13sdp"
+        android:background="@color/grey_300"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/requested_amount"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:inputType="number"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="left"
+        android:inputType="number"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:background="@color/grey_300"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <Button
+        android:id="@+id/btn_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/request"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"/>
+
+
+
+</LinearLayout>

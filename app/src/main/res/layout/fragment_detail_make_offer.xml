@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_tab"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="8dp"
+                app:contentPadding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_make_office"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/make_your_office_here"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="35dp"
+                        android:gravity="center|start"
+                        android:text="@string/enter_your_offer_price"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/cet_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+
+                        <Button
+                            android:id="@+id/btn_buy"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_btn_solid"
+                            android:text="@string/buy_it_now"
+                            android:textColor="@color/white"
+                            android:visibility="gone"
+                            android:textSize="@dimen/_10sdp"/>
+
+                        <Button
+                            android:id="@+id/btn_submit"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/round_btn_solid"
+                            android:text="@string/submit"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btn_as_is"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_btn_solid"
+                            android:text="@string/as_is"
+                            android:visibility="gone"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/offer_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/offer_already_submitted"
+                        android:textColor="@color/Red"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

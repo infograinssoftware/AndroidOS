@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bids"
+        android:title="@string/all_bids" />
+
+    <item
+        android:id="@+id/edit_property"
+        android:title="@string/edit_property" />
+
+   <item
+        android:id="@+id/offer"
+        android:title="@string/all_offer" />
+    <!--<item
+        android:id="@+id/delete_pro"
+        android:title="@string/delete_this_property" />
+    <item
+        android:id="@+id/likes"
+        android:title="@string/liked_by_users" />-->
+
+
+</menu>

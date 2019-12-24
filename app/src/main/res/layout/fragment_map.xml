@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sell" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@color/transparent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:padding="@dimen/_7sdp">
+
+                <LinearLayout
+                    android:id="@+id/lay_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/icon_serach"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/search"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:srcCompat="@drawable/serach_black" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/title_location_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparent"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="0.8dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/icon_serach"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/filter" />
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame_container" />
+
+        <FrameLayout
+            android:id="@+id/fram_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame_container" />
+
+        <TextView
+            android:id="@+id/txvButtonCancelDrawing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frame_container"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_btn_solid"
+            android:padding="@dimen/_5sdp"
+            android:text="Cancel Drawing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/icon_live_feeds"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_above="@+id/icon_hs"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:background="@drawable/livefeed"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/icon_hs"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_above="@+id/icon_hammer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/join_hs"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/icon_hammer"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/hammer_icon"
+            android:visibility="gone" />
+
+        <!--<com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/FloatingActionMenu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="0dp"
+            android:theme="@style/yourTheme"
+            android:visibility="gone"
+            fab:menu_colorNormal="@color/colorPrimaryDark"
+            fab:menu_colorPressed="@color/colorPrimaryDark"
+            fab:menu_colorRipple="@color/colorPrimaryDark">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fb_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/radius_icon"
+                fab:fab_label=""
+                fab:fab_size="mini" />
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fb_news_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/property_icon"
+                fab:fab_label=""
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fb_hammer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hammerr_icon"
+                fab:fab_label=""
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fb_hs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hs_icon"
+                fab:fab_label=""
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fb_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_reset_icon"
+                fab:fab_label=""
+                fab:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>-->
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_25sdp">
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_loan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="110dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_loan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/loan" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_raduis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="90dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_radius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/radius_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_newfeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="70dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_news_feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/property_icon" />
+
+                <TextView
+                    android:id="@+id/txt_feeds"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/red_circle"
+                    android:elevation="7dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_hs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_hs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/hs_icon"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_hammer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_hammer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/hammerr_icon" />
+
+                <TextView
+                    android:id="@+id/txt_hammer"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/red_circle"
+                    android:elevation="7dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/location_reset_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="13dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:scaleType="center"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/plus_icon_white" />
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+    <include android:id="@+id/bottom" layout="@layout/bottomsheet" />
+
+</RelativeLayout>

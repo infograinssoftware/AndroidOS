@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stripe="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:background="@drawable/shap_sqare"
+        android:elevation="@dimen/_5sdp"
+        app:contentPadding="@dimen/_16sdp">
+
+
+        <com.stripe.android.view.CardMultilineWidget
+            android:id="@+id/card_multiline_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shouldShowPostalCode="false"
+            stripe:cardTextErrorColor="@android:color/red" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/paynow"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/btn"
+        android:text="@string/pay_now"
+        android:textColor="@color/white" />
+
+</LinearLayout>

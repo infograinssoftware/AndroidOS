@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_tab"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ctv_sold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_loan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/apply_for_loan"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_14sdp"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ctv_reserve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="5dp"
+                        android:text="The Reserve was not met."
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/ctv_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12dp" />
+
+                    <!--<ImageView
+                        android:id="@+id/image_property"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/welcome_bg"
+                        android:scaleType="fitXY" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/lay_item_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_200sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/upcoming_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:id="@+id/viewPagerCountDots"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_8sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ctv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_300" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ctv_beds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ctv_title_beds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/beds"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/grey_300" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ctv_bath"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ctv_title_bath"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/bath"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/grey_300" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ctv_sqFeet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ctv_title_sqFeet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/sq_feet"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/grey_300" />
+
+                    <TextView
+                        android:id="@+id/ctv_final_bid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ctv_action_ended"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="5dp"
+                        android:text="Action has ended"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/ctv_transition_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/transition_details"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/grey_300" />
+
+                    <TextView
+                        android:id="@+id/ctv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/description"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/grey_300" />
+
+                    <TextView
+                        android:id="@+id/ctv_documents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/disclosures"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/grey_300" />
+
+                    <TextView
+                        android:id="@+id/ctv_fixtures"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/fixtures"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/grey_300" />
+
+                    <LinearLayout
+                        android:id="@+id/lay_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_pets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/pets"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/grey_300" />
+
+                    <TextView
+                        android:id="@+id/txt_smoking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/pets"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/grey_300" />
+
+                    <TextView
+                        android:id="@+id/txt_parking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/pets"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/grey_300" />
+
+
+                    <TextView
+                        android:id="@+id/txt_open_house"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/how_open_house_live_work"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                    <Button
+                        android:id="@+id/video_house"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/house_live"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

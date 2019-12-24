@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/defaultuser" />
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/user_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableLeft="@drawable/call"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/level_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/project_start_date"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/txt_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="20 may 2018"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/level_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/total_days"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/txt_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="20 days"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/praposal_amount"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/level_work_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/postdescription"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/txt_work_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/dummy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/level_milestone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/milestone_history"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lay_milestone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_review"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/review_feedback"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <Button
+                    android:id="@+id/btn_payment"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/create_milestone"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Button
+                    android:id="@+id/btn_message"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/message"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/lay_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_200sdp"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/upcoming_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/dummy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/service_price"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lay_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/service_delivery_days"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:flChildSpacing="@dimen/_5sdp"
+                app:flChildSpacingForLastRow="align"
+                app:flRowSpacing="@dimen/_5sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/timing_of_service_delivery"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_working_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="7:00PM to 8:00AM" />
+
+            <TextView
+                android:id="@+id/lay_ratting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/ratting_review"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_ratting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_3sdp" />
+
+            <TextView
+                android:id="@+id/txt_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/view_more"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_apply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/apply"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

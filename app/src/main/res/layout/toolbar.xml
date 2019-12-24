@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/h_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="6dp"
+    android:minHeight="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <!--  <TextView
+          android:visibility="gone"
+          android:id="@+id/ctv_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start|center"
+          android:gravity="center"
+          android:textColor="@color/black"
+          android:textSize="18dp" />-->
+
+
+    <ImageView
+        android:id="@+id/img_overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@drawable/icon_menu"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="end|center"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@drawable/icon_menu"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_notification"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end|center"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:srcCompat="@drawable/notifications"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_you_noti"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="end|center"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_noti"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/notifications" />
+
+        <TextView
+            android:id="@+id/noticount_text"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/red_circle"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+    <!-- <TextView
+         android:id="@+id/ctv_logout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end|center"
+         android:layout_marginRight="20dp"
+         android:text=""
+         android:gravity="center"
+         android:drawableLeft="@drawable/logout"
+         android:textColor="@color/black"
+         android:textSize="14dp" />-->
+
+    <RelativeLayout
+        android:id="@+id/rel_follow"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="end|center"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_follow"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/feed_like" />
+
+        <TextView
+            android:id="@+id/tab_counter_text"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/red_circle"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/ctv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+
+</androidx.appcompat.widget.Toolbar>

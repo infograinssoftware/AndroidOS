@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_110sdp"
+    android:layout_height="@dimen/_110sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/shap_sqare">
+
+    <ImageView
+        android:id="@+id/img_work"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>

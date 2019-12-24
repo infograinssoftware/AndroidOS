@@ -1,0 +1,554 @@
+<resources>
+    <string name="app_name">Hplus</string>
+    <string name="home">Home</string>
+    <!--login signup selection activity-->
+    <string name="login">Login</string>
+    <string name="Signup">Sign Up</string>
+
+    <string name="font">SourceSansPro.ttf</string>
+
+
+    <!--Login-->
+    <string name="fb">Login With facebook</string>
+    <string name="e_mail">Email Address</string>
+    <string name="new_pw">New Password(min 6 character)</string>
+    <string name="old_pw">Old Password</string>
+    <string name="cnfrm_pw">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="need_ac">Need a Account?</string>
+    <string name="next">Next</string>
+    <!--SignUp-->
+    <string name="fullname">Full Name</string>
+    <string name="first_name">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="username">Username</string>
+    <string name="country">Country</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="zipcode">Zip code</string>
+    <string name="state">State</string>
+    <string name="address">Address</string>
+    <string name="gender">Gender</string>
+    <string name="pnumber">Phone Number</string>
+    <string name="date_month_year">Date Month Year</string>
+    <string name="looking">I am Looking to</string>
+    <string name="hire">Hire</string>
+    <string name="work">Work</string>
+    <string name="already">Already you have Account?</string>
+    <string name="sig">Sign In</string>
+
+    <!--Mordgage SignUp-->
+    <string name="company_name">Company Name</string>
+    <string name="address1">Address 1</string>
+    <string name="address2">Address 2</string>
+    <string name="company_phone">Company Phone</string>
+    <string name="company_fax">Company Fax</string>
+    <string name="how_many_state_service">How many states do you service?</string>
+    <string name="how_many_employee">How many employees do you have?</string>
+
+    <!--Upload Screen-->
+    <string name="upload">Upload File</string>
+    <string name="doc1">Document 1</string>
+    <string name="doc2">Document 2</string>
+    <string name="doc3">Document 3</string>
+    <string name="doc4">Document 4</string>
+    <string name="doc5">Document 5</string>
+    <!--facebook app ID-->
+    <string name="app_id">1806141439601129</string>
+    <!--Titles of Toolbar-->
+    <string name="waiting">Not Approved By Admin</string>
+    <string name="terms_conditions"> Terms \u0026 Conditions</string>
+    <!--Waiting Screen-->
+    <string name="read_more">Read More</string>
+
+    <!--Terms & Condition-->
+    <string name="terms">Accept All Terms \u0026 Conditions</string>
+    <string name="accept">Accept</string>
+    <string name="tm">Terms \u0026 Conditions</string>
+    <string name="up">please upload five documents</string>
+    <string name="lorem_ipsome">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moreorless normal distribution of letters, as opposed to using Content here content here making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moreorless normal distribution of letters, as opposed to using Content here content here making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</string>
+
+    <!--Category Tab-->
+    <string name="category_name">Category Name</string>
+    <!--Instant Booking Tab-->
+    <string name="heading">Scheduled Booking</string>
+    <string name="first_date">Appointment First Date</string>
+    <string name="second_date">Appointment Second Date</string>
+    <string name="find">Find</string>
+    <string name="first">First Date</string>
+    <string name="last">Last Date</string>
+    <!--Navigation Drawer Titles-->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="please_wait">Please Wait&#8230;</string>
+    <string name="server_fail">Unable to connect..please try again </string>
+    <string name="payment_server_fail">Unable to complete..please try again </string>
+    <!--HOME-->
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="home_tag">Home</string>
+    <string name="add_project">Add a project</string>
+    <string name="post_project">Post a project</string>
+    <string name="my_projects">My Projects</string>
+    <string name="search_project">Search Project</string>
+    <string name="hiring_service_provider">Hiring service provider</string>
+    <string name="check_status">Check status</string>
+    <string name="transaction_hist">All Transaction History</string>
+    <string name="noti">Notifications</string>
+    <string name="flight_booking">My Digg</string>
+    <string name="email_box">Home Booking</string>
+    <string name="chat_box">Trip IT</string>
+    <string name="trip_it">Trip-it</string>
+    <string name="home_booking">Add Digg</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="user_nav_drawer_labels">
+        <item>@string/home_tag</item>
+        <item>@string/add_project</item>
+        <item>@string/my_projects</item>
+        <item>@string/hiring_service_provider</item>
+        <item>@string/check_status</item>
+        <item>@string/transaction_hist</item>
+        <item>@string/noti</item>
+        <item>@string/flight_booking</item>
+        <item>@string/email_box</item>
+        <item>@string/chat_box</item>
+        <item>@string/home_booking</item>
+        <item>@string/logout</item>
+    </string-array>
+
+    <string-array name="worker_nav_drawer_labels">
+        <item>@string/home_tag</item>
+        <item>@string/my_projects</item>
+        <item>@string/search_project</item>
+        <item>@string/hiring_service_provider</item>
+        <item>@string/check_status</item>
+        <item>@string/transaction_hist</item>
+        <item>@string/noti</item>
+        <item>@string/flight_booking</item>
+        <item>@string/email_box</item>
+        <item>@string/chat_box</item>
+        <item>@string/home_booking</item>
+        <item>@string/logout</item>
+    </string-array>
+
+    <!-- <string-array name="mobile_country_code">
+        <item>@string/home_tag</item>
+        <item>@string/add_project</item>
+        <item>@string/my_projects</item>
+        <item>@string/search_project</item>
+        <item>@string/hiring_service_provider</item>
+        <item>@string/check_status</item>
+        <item>@string/transaction_hist</item>
+        <item>@string/noti</item>
+        <item>@string/flight_booking</item>
+        <item>@string/email_box</item>
+        <item>@string/chat_box</item>
+        <item>@string/home_booking</item>
+        <item>@string/logout</item>
+    </string-array>-->
+    <!--Navigation Drawer Titles Ends Here-->
+
+    <string-array name="country_dollar">
+        <item>@string/usd</item>
+        <item>@string/aud</item>
+        <item>@string/cad</item>
+        <item>@string/eur</item>
+        <item>@string/gbp</item>
+        <item>@string/cny</item>
+        <item>@string/hks</item>
+        <item>@string/inr</item>
+        <item>@string/jmd</item>
+        <item>@string/clp</item>
+        <item>@string/jpy</item>
+        <item>@string/sek</item>
+        <item>@string/myr</item>
+        <item>@string/idr</item>
+        <item>@string/mxn</item>
+        <item>@string/nzd</item>
+        <item>@string/php</item>
+        <item>@string/pln</item>
+        <item>@string/sgd</item>
+        <item>@string/brl</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>1500</item>
+        <item>12500</item>
+        <item>37500</item>
+        <item>75000</item>
+        <item>150000</item>
+        <item>250000</item>
+        <item>500000</item>
+        <item>100000</item>
+        <item>2500000</item>
+    </string-array>
+
+    <string-array name="types_of_work">
+        <item>Per Week</item>
+        <item>Per Month</item>
+    </string-array>
+
+
+    <string name="usd">USD</string>
+    <string name="aud">AUD</string>
+    <string name="cad">CAD</string>
+    <string name="eur">EUR</string>
+    <string name="gbp">GBP</string>
+    <string name="cny">CNY</string>
+    <string name="hks">HKS</string>
+    <string name="inr">INR</string>
+    <string name="jmd">JMD</string>
+    <string name="clp">CLP</string>
+    <string name="jpy">JPY</string>
+    <string name="sek">SEK</string>
+    <string name="myr">MYR</string>
+    <string name="idr">IDR</string>
+    <string name="mxn">MXN</string>
+    <string name="nzd">NZD</string>
+    <string name="php">PHP</string>
+    <string name="pln">PLN</string>
+    <string name="sgd">SGD</string>
+    <string name="brl">BRL</string>
+
+
+    <string name="product_name">Product Name</string>
+    <string name="project_description">Project Description</string>
+    <string name="skills_required">Skills Required</string>
+    <string name="hp_certifiedrequired">Homes Plus Certifications Required</string>
+    <string name="about_client">About The Client</string>
+    <string name="project_budget">Project Budget</string>
+    <string name="txt_image_slider">Image Slideshow</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="time_out">Time Out</string>
+    <string name="error_occured">Error Occurred</string>
+    <string name="send">Send</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="verify_social_media">Verify your Social Media Profile to access all of Homes+</string>
+    <string name="fb_invite_text">Please invite any of three friends from your facebook friends list and send them an invitation to review your profile in Home plus</string>
+    <string name="linkedin_invite_text">Please invite any of three friends from your LinkedIn friends list and send them an invitation to review your profile in Home plus</string>
+    <string name="google_invite_text">Please invite any of three friends from your Google plus friends list and send them an invitation to review your profile in Home plus</string>
+    <string name="invitation_title">HomePlus</string>
+    <string name="invitation_message">Install HPlus app which is easy to find out homes as per required.</string>
+    <string name="invitation_deep_link">https://infograins.com/INFO01/homesplus/img/logo.png
+</string>
+    <string name="invitation_custom_image">https://infograins.com/INFO01/homesplus/img/logo.png</string>
+    <string name="skip_continue">Skip and Continue</string>
+
+    <!--Add Project-->
+    <string name="personalize_your_project">Personalize your project  by editing the Summary and adding any specific information</string>
+    <string name="time_duration">Time Duration(in days:)</string>
+
+    <!--SearchProject-->
+
+    <string name="detail">Detail</string>
+    <string name="project_name">Project Name</string>
+    <string name="mp_edit">Edit</string>
+    <string name="mp_delete">Delete</string>
+    <string name="mp_view">View</string>
+
+    <string name="bid">Bid</string>
+    <string name="hp_biding_note">Notes: Homes plus Project Fee will only be charged when you get awarded and accept the project.</string>
+    <string name="place_bid">Place Bid</string>
+    <string name="approval_txt">Your profile still in wait.Please wait our support will get back as soon as possible</string>
+
+    <string name="bl_hire">Hire</string>
+    <string name="bl_accept">Accept</string>
+    <string name="bl_portfolio">Portfolio</string>
+    <string name="blist_">Accept</string>
+    <string name="breject">Reject</string>
+    <string name="select_all">Select All</string>
+
+
+    <!--HOME BOKKING(DIGG)-->
+
+    <string name="location">LOCATION</string>
+    <string name="information">Give us location information of the property</string>
+    <string name="property_title">Property Title</string>
+    <string name="pricing">PRICING</string>
+    <string name="total_price">Total Price($)</string>
+    <string name="discount">Discount(%)</string>
+    <string name="after_discount">Total Price After Discount(%)</string>
+    <string name="discount_from">Discount From Date</string>
+    <string name="discount_to">Discount To Date</string>
+    <string name="ownership">Ownership</string>
+
+    <string-array name="oownership">
+        <item>Select Ownership</item>
+        <item>Property Manager</item>
+        <item>Owner</item>
+        <item>Lease Holder</item>
+    </string-array>
+
+    <string-array name="property_usee">
+        <item>Select Property Use</item>
+        <item>Sell</item>
+        <item>Rent</item>
+        <item>Vacation</item>
+    </string-array>
+
+
+    <string-array name="property_type">
+        <item>Select Property Type</item>
+        <item>Retidential Apartment</item>
+        <item>Retidential Land</item>
+        <item>Independent House/Villa</item>
+        <item>Farm House</item>
+        <item>Studio Apartment</item>
+        <item>Serviced Apartment</item>
+        <item>Townhome</item>
+        <item>Condo</item>
+        <item>Flat</item>
+        <item>Retail Store</item>
+        <item>Comercial Land</item>
+    </string-array>
+
+    <string name="title">Title</string>
+    <string name="property_type">Property Type</string>
+    <string name="price">Price</string>
+    <string name="posting_date">Posting Date</string>
+    <string name="status">Status</string>
+    <!--MyHome Details-->
+    <string name="details">DETAILS</string>
+    <string name="infoo">Give us information about the configration of the property</string>
+    <string name="property_age">Property Age</string>
+    <string name="buitup_area">Built Up Area(Sq.Ft)</string>
+    <string name="bhks">BHK(Bedrooms,Hall and Kitchen)</string>
+    <string name="total_floor">Total Floors</string>
+    <string name="no_of_bedrooms">No. of Bedrooms</string>
+    <string name="no_of_balconies">No. of Balconies</string>
+    <string name="no_of_bathrooms">No. of Bathrooms</string>
+    <string name="availability">Availability</string>
+    <string name="one">1</string>
+    <string name="year">year</string>
+    <string-array name="total_floor">
+        <item>Select Floor</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9+</item>
+    </string-array>
+    <string-array name="no_bedroom">
+        <item>Select Bedroom</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9+</item>
+    </string-array>
+    <string-array name="no_hall">
+        <item>Select Hall</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9+</item>
+    </string-array>
+    <string-array name="no_kitchen">
+        <item>Select Kitchen</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9+</item>
+    </string-array>
+    <string-array name="no_balcony">
+        <item>select Balcony</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9+</item>
+    </string-array>
+    <string-array name="no_bathroom">
+        <item>Select Bathroom</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9+</item>
+    </string-array>
+    <string-array name="no_age">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9+</item>
+    </string-array>
+    <string-array name="avaibility_data">
+        <item>Select Avaibility</item>
+        <item>Coming Soon</item>
+        <item>Immediate</item>
+    </string-array>
+    <string-array name="year_data">
+        <item>Select</item>
+        <item>Months</item>
+        <item>Years</item>
+    </string-array>
+
+
+    <!--MyHome Booking Detail-->
+    <string name="image">Images</string>
+    <string name="$200000">$200000</string>
+    <string name="Discription">Discription</string>
+    <string name="features">Features</string>
+
+    <!--MyHome Booking Detail-->
+    <string name="wardrobes">Wardrobes</string>
+    <string name="ac">AC</string>
+    <string name="bed">Bed</string>
+    <string name="moduler_kitchen">Moduler Kitchen</string>
+    <string name="refrigrator">Refrigerator</string>
+    <string name="geyser">Geyser</string>
+    <string name="water_storage">Water Storage</string>
+    <string name="lifts">Lift(s)</string>
+    <string name="fensui">Feng Shui / Vaastu Compliant</string>
+    <string name="parkk">Park</string>
+    <string name="waste_disposall">Waste Disposal</string>
+    <string name="rain_water_har">Rain Water Harvesting</string>
+    <string name="piped_gas">Piped-gas</string>
+    <string name="water_purifier">Water Purifier</string>
+    <string name="maintanance_staff">Maintanance Staff</string>
+
+    <string-array name="facing">
+        <item>Select Facing</item>
+        <item>North</item>
+        <item>South</item>
+        <item>East</item>
+        <item>West</item>
+        <item>North-East</item>
+        <item>North-West</item>
+        <item>South-East</item>
+        <item>South-West</item>
+    </string-array>
+    <string-array name="type_of_flooring">
+        <item>Select Flooring</item>
+        <item>vitrified</item>
+        <item>Marble</item>
+        <item>Ceremic</item>
+        <item>Mosaic</item>
+        <item>Wood</item>
+        <item>Granite</item>
+        <item>Spartex</item>
+        <item>Cement</item>
+        <item>Stone</item>
+        <item>Vinyl</item>
+        <item>IPS finish</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="furnishing">
+        <item>Select furnished type</item>
+        <item>Furnished</item>
+        <item>Semifurnished</item>
+        <item>Unfurnished</item>
+    </string-array>
+
+    <string name="from_camera">from camera</string>
+    <string name="from_gallery">from gallery</string>
+    <string name="Close">Close</string>
+    <string name="add_photo">add photo</string>
+
+    <!--input Validation-->
+    <string name="only_text">abcdefghijklmnopqrstu vwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ,</string>
+    <string name="title_activity_home_map_">HomeMap_Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Home Booking-->
+    <string-array name="sort_by">
+        <item>Sort by</item>
+        <item>Verified</item>
+        <item>Newest</item>
+        <item>Rent(low to high)</item>
+        <item></item>
+    </string-array>
+
+    <!--Hotel Searching-->
+    <string-array name="rooms">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="hotel_name">Quality inn Suit Conference Centre</string>
+    <string name="review">0.0</string>
+
+    <!--CCAvenue -->
+
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="selectAction">
+        <item>Resend OTP</item>
+        <item>Enter OTP Manually</item>
+    </string-array>
+    <string name="title_activity_initial_screen">CCAvenueMobileSeamless</string>
+    <string name="title_activity_billing_shipping">BillingShippingActivity</string>
+    <string name="title_activity_status">StatusActivity</string>
+    <string name="access_code">Access Code</string>
+
+    <string name="pay_opt">Payment Option</string>
+    <string name="card_type">Card Type</string>
+    <string name="pay_button">Pay</string>
+    <string name="next_button">Next</string>
+    <string name="name">Name</string>
+    <string name="billingAddress">Billing Address</string>
+    <string name="deliveryAddress">Delivery Address</string>
+    <string name="zip">Zip</string>
+    <string name="tel">Telephone</string>
+    <string name="email">Email Id</string>
+    <string name="merchant_id">Merchant Id</string>
+    <string name="currency">Currency</string>
+    <string name="amount">Amount</string>
+    <string name="redirect_url">Redirect Url</string>
+    <string name="cancel_url">Cancel Url</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_cvv">Card CVV</string>
+    <string name="expiry_month">Expiry Month</string>
+    <string name="expiry_year">Expiry Year</string>
+    <string name="card_details">Card Details</string>
+    <string name="issuing_bank">Issuing Bank</string>
+    <string name="rsa_url">RSA Key Url</string>
+    <string name="customer_identifier">Customer Identifier</string>
+    <string name="emi_banks">EMI Banks</string>
+    <string name="emi_card_name">Card Name</string>
+</resources>

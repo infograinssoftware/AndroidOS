@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/signature_pad_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons_container"
+        android:layout_below="@+id/toolbar">
+
+        <com.open_source.SignaturePack.SignaturePad
+            android:id="@+id/signature_pad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line"
+            android:layout_marginBottom="@dimen/_2sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_16sdp">
+
+        <Button
+            android:id="@+id/signature_clear_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/clear_pad"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/signature_save_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/save_signature"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+</RelativeLayout>

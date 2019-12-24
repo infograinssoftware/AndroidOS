@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="vaultCont" />
+    <item type="id" name="emiPlan" />
+    <item type="id" name="procFee" />
+    <item type="id" name="glide_tag" />
+</resources>

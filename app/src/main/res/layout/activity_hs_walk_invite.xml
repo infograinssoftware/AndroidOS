@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbar"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/default_property" />
+
+    <TextView
+        android:id="@+id/lvltype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/protype"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/lvltype"
+        android:text="@string/type"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/lvladdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/lvl_location"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/lvladdress"
+        android:text="@string/address"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/levl_walk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/walkthrough_details"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/levl_walk"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/date"
+        android:textColor="@color/grey_700"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/time"
+        android:textColor="@color/grey_700"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/agree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/agree"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/disagree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/disagree"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

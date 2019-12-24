@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include android:id="@+id/h_toolbar"
+        layout="@layout/toolbar_sell"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="6dp"
+        android:layout_below="@+id/h_toolbar"
+        app:cardElevation="8dp"
+        app:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/serach_black" />
+
+            <AutoCompleteTextView
+                android:id="@+id/title_location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/icon_serach"
+                android:layout_toRightOf="@+id/search"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/icon_serach"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/filter" />
+
+           <!-- <TextView
+                android:id="@+id/ctv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/filter"
+                android:textSize="14dp" />-->
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/card_search"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/icon_rent"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/rent_add" />
+
+</RelativeLayout>

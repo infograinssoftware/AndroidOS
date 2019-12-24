@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:contentPadding="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_img"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/user_bid"
+                app:civ_border_color="@color/grey"
+                app:civ_border_width="@dimen/_2sdp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/user_img">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ritika"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:id="@+id/lay_bid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ct_bid_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/place_bid_amount"
+                    android:textColor="@color/grey_700"
+                    android:textSize="@dimen/_13sdp" />
+
+                <ImageView
+                    android:id="@+id/img_amount"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_toEndOf="@+id/ct_bid_title"
+                    android:background="@drawable/bid_doller" />
+
+                <TextView
+                    android:id="@+id/ct_bid_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toEndOf="@+id/img_amount"
+                    android:text="76575757"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay_bid">
+                <TextView
+                    android:id="@+id/ct_contact_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/contact_number"
+                    android:textColor="@color/grey_700"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/img_call"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/ct_contact_level"
+                    android:background="@drawable/bid_phone" />
+
+                <TextView
+                    android:id="@+id/ct_user_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:autoLink="phone"
+                    android:text="7657575757"
+                    android:textColor="@color/grey_700"
+                    android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/contact"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ct_location_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/distance"
+                        android:textColor="@color/grey_700"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:id="@+id/img_location"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/ct_location_level"
+                        android:background="@drawable/map" />
+
+                    <TextView
+                        android:id="@+id/ct_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_toEndOf="@+id/img_location"
+                        android:autoLink="phone"
+                        android:text=""
+                        android:textColor="@color/grey_700"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

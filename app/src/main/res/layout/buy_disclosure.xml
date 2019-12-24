@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/_10sdp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_signature"
+        android:layout_margin="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_above="@+id/button_submit"
+        android:text="@string/i_agree_terms_and_conditions" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/h_toolbar"
+    android:elevation="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/ctv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:text="@string/close"
+        android:textColor="@color/grey_400"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/sell_property"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/ctv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginRight="15dp"
+        android:text="@string/clear"
+        android:textColor="@color/grey_400"
+        android:textSize="15dp" />
+
+</androidx.appcompat.widget.Toolbar>

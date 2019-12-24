@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "203673957512",
+    "firebase_url": "https://pausi-real-state.firebaseio.com",
+    "project_id": "pausi-real-state",
+    "storage_bucket": "pausi-real-state.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203673957512:android:8db08e4b5df19c1334db3d",
+        "android_client_info": {
+          "package_name": "com.open_source"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203673957512-fvakh4fvaj6q3rd7muvgibefbpnfhuvu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.open_source",
+            "certificate_hash": "d85de6346b6d1af8a7febea34b97e121af763c90"
+          }
+        },
+        {
+          "client_id": "203673957512-hou8s9mk9qvr5boh90gh7j5fkt82avos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMLlxSHPk394alVYAMAHYMgNyDppz7v-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203673957512-efcb2k5fguc5a5cq1jpnbq0is1599hde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

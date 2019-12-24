@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relview">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:civ_border_width="@dimen/_1sdp"
+                app:civ_border_color="@color/black"
+                android:src="@drawable/you_gold" />
+
+            <TextView
+                android:id="@+id/ctv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/item_image"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/ctv_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ctv_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/grey_600"
+                android:layout_toRightOf="@+id/item_image"
+                android:layout_toLeftOf="@+id/checkbox"
+                android:maxLines="5"
+                android:text="@string/turn_detail" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_tab"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="8dp"
+                app:contentPadding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ctv_title_place_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Place Name Here"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_place_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:textColor="@color/grey_600"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_title_when"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/when"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_when"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_600"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_title_where"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/where"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_where"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_600"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_title_min_bid_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/min_bid_price"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_min_bid_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_600"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/current_max_bid"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_curr_bid_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_600"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_bid_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/bid_amount"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/cet_bid_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/grey_200"
+                        android:gravity="start"
+                        android:inputType="numberDecimal"
+                        android:minHeight="@dimen/_50sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <Button
+                            android:id="@+id/btn_bid_place"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/round_btn_solid"
+                            android:text="@string/bid_place"
+                            android:layout_weight="1"
+                            android:textColor="@color/white" />
+
+
+                      <Button
+                            android:id="@+id/btn_buy"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:background="@drawable/round_btn_solid"
+                            android:text="@string/buy_it_now"
+                             android:visibility="gone"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

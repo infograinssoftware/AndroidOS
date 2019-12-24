@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:srcCompat="@drawable/logo"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/titleSelectLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_language"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txvEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/border_gray"
+            android:layout_gravity="center"
+            android:text="@string/language_english"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/txvOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/border_gray"
+            android:layout_gravity="center"
+            android:text="@string/spanish"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/buttonSubmitLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

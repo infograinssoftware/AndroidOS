@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/white"
+    android:elevation="@dimen/_5sdp"
+    android:padding="@dimen/_10sdp"
+    app:contentPadding="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/defaultuser" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/user_img"
+            android:text="Marco"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toRightOf="@+id/user_img"
+            android:text=""
+             android:maxLines="4"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <RatingBar
+            android:id="@+id/rattingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toRightOf="@+id/user_img"
+            android:progressTint="@color/colorPrimaryDark"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/total_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@+id/rattingbar"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rattingbar"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/user_img"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rattingbar"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/amount"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/rattingbar"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/days"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/grey_600"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

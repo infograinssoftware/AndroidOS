@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+<!--    <com.afollestad.easyvideoplayer.EasyVideoPlayer
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:evp_autoFullscreen="false"
+        app:evp_autoPlay="false"
+        app:evp_customLabelText=""
+        app:evp_disableControls="false"
+        app:evp_hideControlsOnPlay="true"
+        app:evp_leftAction="restart"
+        app:evp_pauseDrawable="@drawable/evp_action_pause"
+        app:evp_playDrawable="@drawable/evp_action_play"
+        app:evp_retryText=""
+        app:evp_rightAction=""
+        app:evp_source=""
+        app:evp_submitText="" />-->
+
+   <!-- <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/toolbar"/>-->
+
+    <com.afollestad.easyvideoplayer.EasyVideoPlayer
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:evp_autoPlay="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/toolbar"/>
+
+</RelativeLayout>

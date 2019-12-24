@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp">
+
+        <LinearLayout
+            android:id="@+id/llone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/request_a_tour"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llone"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/grey"
+                android:hint="@string/select_tour_date"
+                android:inputType="date"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/grey"
+                android:hint="@string/select_time"
+                android:padding="8dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/grey"
+                android:hint="@string/full_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/grey"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/grey"
+                android:hint="@string/contact_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/listll"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/send_your_request"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/cross_gold" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/welcome_bg_second"
+        android:layout_marginBottom="@dimen/_45sdp"/>
+
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        &lt;!&ndash;<ImageView&ndash;&gt;
+        &lt;!&ndash;android:layout_width="@dimen/img_width_height"&ndash;&gt;
+        &lt;!&ndash;android:layout_height="@dimen/img_width_height"&ndash;&gt;
+        &lt;!&ndash;android:src="@drawable/logo" />&ndash;&gt;
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Rent"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/slide_1_desc"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_desc" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_btn_transparent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ic"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/serach_white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/buy"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@+id/ic"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_submit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ic1"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sell_white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/sell"
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/ic1"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>-->
+</RelativeLayout>

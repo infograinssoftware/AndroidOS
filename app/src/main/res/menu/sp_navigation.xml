@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/my_work"
+        android:icon="@drawable/mywork_g"
+        android:title="@string/my_work" />
+
+    <item
+        android:id="@+id/my_account"
+        android:icon="@drawable/you"
+        android:title="@string/you" />
+
+    <item
+        android:id="@+id/job"
+        android:icon="@drawable/job_post"
+        android:title="@string/job_post" />
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/search_history"
+        android:title="@string/history" />
+
+    <item
+        android:id="@+id/navigation"
+        android:icon="@drawable/notifications"
+        android:title="@string/notification" />
+
+
+</menu>

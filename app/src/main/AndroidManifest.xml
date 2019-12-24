@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.open_source">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".util.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="allowBackup">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data android:name="com.plaid.link.public_key"
+            android:value="13f22d76603bb73b6f9604f758b425" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+<!--        <activity android:name=".activity.SplashActivity">-->
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.LoginEmailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SavedSearchesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.FavouritesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.PostMakeOfferListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.DashBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ListingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.FilterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".LiveFeeds.OtherUserProfile" />
+        <!--
+     <activity
+            android:name=".activity.RegisterToBidActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        -->
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.LocationInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.TransitionDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.DescriptionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".activity.DisclosureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.InboxListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".fragment.SellPropertyNext"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.PostListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MakeOfferActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SellDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.InviteUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.VideoPlay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.BidListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.BuyHistory"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SellEditFirst"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SellEditSecond"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.PaymentConfirmation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.PdfViewActivity"
+            android:screenOrientation="portrait" />
+        <!--
+  <activity
+              android:name=".activity.PaymentWebView"
+              android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name=".activity.ConfirmPaymentMessage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ChatImageview"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".fragment.NotificationFragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- //////////////////////rent/////////////////////// -->
+        <activity
+            android:name=".activity.Renter_property_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.RentPayListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.LoanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.RentPayment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.RenterList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".fragment.RentFormFirst"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.TourScheduleRequest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- //////////////////////live feed//////////////// -->
+        <activity
+            android:name=".LiveFeeds.NewsFeedsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".LiveFeeds.FeedCommentsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".LiveFeeds.FeedFilterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".LiveFeeds.FeedLikeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".LiveFeeds.SavedFeedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- //////////////////////service provider//////////////// -->
+        <activity
+            android:name=".ServiceProvider.SPSignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.ServiceProviderHome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.AddWork"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.UserService"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.SpByServiceId"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.UserSPWorkDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.UserApply"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.SPDashboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.SPRequest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.SPServiceRequest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.RateReviewList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.SelectServiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.JobPostActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.JobPostDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.PostBidActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.MyPostBidderList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.MyPostBidderDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.MyPostDashboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.SPJoBPostDashboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.MilestoneRequest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.InvestorQuesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.ProjectDescription"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.RenterReferenceCheckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.RenterReferenceApproval"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.DocumnetTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SignatureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ServiceProvider.SpEditProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity android:name=".activity.CustomGalleryActivity">
+            <intent-filter>
+                <action android:name="OS.ACTION_PICK" />
+                <action android:name="OS.ACTION_MULTIPLE_PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.DeepLinkingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                    <data android:scheme="http"
+                    android:host="www.example.com"
+                    android:pathPrefix="/gizmos" />
+                -->
+                <data android:scheme="os" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <!-- <data android:scheme="os://"/> -->
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <service android:name=".services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- paypal -->
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <activity android:name=".LiveFeeds.FolloReqActivity" />
+        <activity android:name=".activity.OfferListActivtiy" />
+        <activity android:name=".activity.OfferConversationActivity" />
+        <activity android:name=".activity.MyOfferList" />
+        <activity android:name=".activity.Hs_Walk_Invitation" />
+        <activity android:name=".activity.Hs_Disagree_Activity" />
+        <activity android:name=".activity.CalenderTask" />
+        <activity
+            android:name=".activity.RentFilterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.FavFilterActivity" />
+        <activity android:name=".activity.SlideImageview" />
+        <activity android:name=".activity.RentFormSecond" />
+        <activity android:name=".activity.StripeWeb" />
+        <activity android:name=".activity.ActivityFaq" />
+        <activity android:name=".activity.QuestionDetail" />
+        <activity android:name=".activity.BuyDisclosure" />
+        <activity android:name=".activity.MakeOfferTermActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="65bc72d5d854e2a57781814314f67852e6582055" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+    </application>
+
+</manifest>

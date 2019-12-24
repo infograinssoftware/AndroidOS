@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/imgCountryFlag"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_flag"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dp"/>
+
+    <TextView
+        android:id="@+id/txvCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imgCountryFlag"
+        android:layout_toStartOf="@id/rbSelectedCurrency"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Rupees"
+        />
+
+    <TextView
+        android:id="@+id/txvCurrencyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txvCountryName"
+        android:layout_toEndOf="@+id/imgCountryFlag"
+        android:layout_toStartOf="@id/rbSelectedCurrency"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="Rupees" />
+
+    <RadioButton
+        android:id="@+id/rbSelectedCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:buttonTint="@color/colorPrimary"/>
+
+    <View
+        android:layout_below="@id/txvCurrencyName"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey_500"/>
+
+</RelativeLayout>

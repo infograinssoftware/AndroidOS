@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="@dimen/_10sdp"
+    android:elevation="@dimen/_5sdp"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_2sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_16sdp"
+            android:text="@string/payment_recieved"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_13sdp"
+            android:layout_below="@+id/txt_level"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="00-00-0000"/>
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:layout_alignParentRight="true"
+            android:text="$57"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Open Space</string>
+    <string name="title_buy">Acheteur</string>
+    <string name="title_sell">Vendeur</string>
+    <string name="title_notifications">Notification</string>
+    <string name="title_rent">Loueur</string>
+    <string name="title_you">Profil</string>
+
+    <!--ProgressHUD-->
+    <string name="loading">Chargement...</string>
+    <string name="progress">progres</string>
+
+    <!--FaceBook Login-->
+    <string name="facebook_app_id">504710129940256</string>
+
+    Googel Map Key and Firebase
+<!--        <string name="mapkey">AIzaSyB7xmB2ybF2gm8C_wcZmNqqFJa_wDlrvww</string>     &lt;!&ndash; // Client Map key&ndash;&gt;-->
+    <string name="mapkey">AIzaSyAMLlxSHPk394alVYAMAHYMgNyDppz7v-o</string>     <!-- // Client Map key-->
+<!--    <string name="mapkey">AIzaSyAKvycSSOCZc0MmqmBXyCw15sfVO0zGKKM</string>-->
+    <!--Choose Admin Type-->
+    <string name="buy">Acheteur</string>
+    <string name="sell">Vendeur</string>
+    <string name="just_visit">Ou juste visiter...</string>
+    <string name="dummy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</string>
+
+    <!--On Location-->
+    <string name="turn_on_location">Activer L\'emplacement!</string>
+    <string name="turn_detail">Ainsi, nous pouvons partager votre propriété et vous mettre en contact avec des personnes de votre région..</string>
+    <string name="your_phone">VOTRE TÉLÉPHONE</string>
+    <string name="enter_your_zipcode">CODE POSTAL</string>
+    <string name="enter_zipcode">CODE POSTAL</string>
+    <string name="next">suivant</string>
+
+    <!--Error Msg-->
+    <string name="error_msg_location">S\'il vous plaît activer l\'emplacement</string>
+    <string name="internet_connection">Pas de connexion Internet</string>
+    <string name="facebook_login_cancel">Connexion Facebook annuler</string>
+    <string name="error_in_facebook">Erreur lors de la connexion à Facebook</string>
+    <string name="error_in_gmail">Connexion Gmail annuler</string>
+    <string name="please_try_again">Veuillez réessayer</string>
+    <string name="msg_error_fname">Prénom</string>
+    <string name="msg_error_lname">nom de famille</string>
+    <string name="msg_error_user_type">Please select User Type</string>
+    <string name="msg_error_contact">type d\'utilisateur</string>
+    <string name="msg_error_contact_length">Numéro de contact</string>
+    <string name="msg_error_email">Veuillez entrer un email valide</string>
+    <string name="msg_error_old_pwd">Veuillez entrer l\'ancien mot de passe</string>
+    <string name="msg_error_pwd">Veuillez entrer le mot de passe</string>
+    <string name="msg_error_confirm_pwd">S\'il vous plaît confirmer le mot de passe</string>
+    <string name="msg_current_password">S\'il vous plaît entrer le mot de passe actuel</string>
+    <string name="msg_new_password">Veuillez entrer un nouveau mot de passe</string>
+    <string name="msg_confirm_password">Confirmez le mot de passe</string>
+    <string name="msg_match_password">Confirmer que le mot de passe ne correspond pas</string>
+    <string name="msg_error_location">Veuillez entrer un emplacement valide</string>
+    <string name="msg_error_message">S\'il vous plaît entrer un message</string>
+
+    <string name="msg_error_price">Entrer le montant</string>
+    <string name="msg_error_valid_pwd">Le mot de passe doit contenir au minimum 6 caractères, au moins 1 alphabet majuscule, 1 chiffre et 1 caractère spécial.!!</string>
+
+    <string name="pass_incorrect">Le mot de passe ne correspond pas</string>
+
+    <string name="camera_permission_needed">Permission de caméra requise</string>
+    <string name="storage_permission_needed">autorisation de stockage nécessaire</string>
+    <string name="grant">Donner</string>
+    <string name="enable">activer</string>
+
+    <!--Choose Login Type-->
+    <string name="join_us_now">Adhérer maintenant!</string>
+    <string name="owner_property_detail">Les propriétaires qui vendent et achètent leurs \n propriété ici</string>
+    <string name="continue_with_facebook">Continue avec Facebook</string>
+    <string name="continue_with_google">Continue avec Google</string>
+    <string name="continue_with_email">Continue avec Email</string>
+    <string name="continue_with_dealer">Continue comme un client</string>
+    <string name="i_agree_terms_and_conditions">Je suis d\'accord avec les termes et conditions.</string>
+
+    <!--Password Dialog-->
+    <string name="current_password">Mot de passe actuel</string>
+    <string name="new_password">nouveau mot de passe</string>
+    <string name="confirm_password">Confirmez le mot de passe</string>
+
+    <!--Email Login-->
+    <string name="login_with_you_email">Connectez-vous avec vous Email</string>
+    <string name="enter_your_email">ENTRER VOTRE EMAIL</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="change_pass">Changer le mot de passe</string>
+    <string name="submit">soumettre</string>
+    <string name="sign_up">S\'inscrire</string>
+    <string name="enter_your_password">Entrer votre Mot de passe</string>
+    <string name="upload_your_image">Télécharger votre photo</string>
+    <string name="first_name">Prénom</string>
+    <string name="first_name_small">Prénom</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="last_name_small">Nom de famille</string>
+    <string name="enter_your_contact_no">Entrez votre numéro de téléphone</string>
+    <string name="back_to_login">Retour connexion</string>
+    <string name="singup_here">Vendez votre propriété ici</string>
+
+    <string name="slide_1_title">Propriété à vendre\n achat</string>
+    <string name="slide_1_desc">Le moyen le plus simple de rechercher un bien à louer.</string>
+
+    <!--Terms and Condition Dialog-->
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="privacy_policy_detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!--You Fragment-->
+    <string name="your_name">votre nom</string>
+    <string name="youremail_gmail_com">votrecourrier@gmail.com</string>
+    <string name="search">Chercher</string>
+    <string name="saved_searches">Recherches sauvegardées</string>
+    <string name="favourites">Favoris</string>
+    <string name="dashborad">Tableau de bord</string>
+    <string name="about">Sur</string>
+    <string name="about_us">À propos de nous</string>
+    <string name="contact_us">Contactez-nous</string>
+    <string name="notification">Les Notifications</string>
+    <string name="rate_us">Évaluez nous</string>
+    <string name="like_us_on_facebook">Aimez-nous sur Facebook</string>
+    <string name="like_us_on_twitter">Aimez-nous sur Twitter</string>
+    <string name="version_1_1_1">Version 1.0</string>
+    <string name="title">Title</string>
+    <string name="private_information">Information privée</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="website">site Internet</string>
+    <string name="bio">Bio</string>
+    <string name="category">Category</string>
+    <string name="gender">Le sexe</string>
+    <string name="page">Page</string>
+    <string name="female">FEMME</string>
+    <string name="male">HOMME</string>
+    <string name="msg_error_gender">Veuillez choisir le sexe</string>
+
+
+    <!--Listing-->
+    <string name="more_info">Plus d\'informations</string>
+    <string name="info_here">Info ici</string>
+
+
+    <!--Sell Property-->
+    <string name="bathroom">Salle de bain</string>
+    <string name="bedroom">Chambre à coucher</string>
+    <string name="other_info">autre d\'informations</string>
+    <string name="other">autre</string>
+    <string name="your_selected_location_here">Votre emplacement sélectionné ici</string>
+    <string name="location">Location</string>
+    <string name="commercial">Commercial</string>
+    <string name="plot">Parcelle de terrain</string>
+    <string name="home">domicile</string>
+
+    <string name="type">Type</string>
+    <string name="short_sale">Vente flash</string>
+    <string name="foreclosure_sale">Vente de forclusion</string>
+    <string name="wanted">Recherché</string>
+    <string name="for_rent">A louer</string>
+    <string name="for_sale">A vendre</string>
+    <string name="purpose">Category</string>
+    <string name="privates">Privé</string>
+    <string name="post">Messages</string>
+    <string name="owners">Propriétaire</string>
+    <string name="agent">Agent</string>
+    <string name="investor">Investisseur</string>
+    <string name="sell_type">type de vente</string>
+    <string name="your_information">mon Information</string>
+    <string name="upload_images">Importer des images</string>
+    <string name="upload_more_images">Télécharger plus d\'images</string>
+    <string name="upload_now">Télécharger maintenant</string>
+
+    <!--Filter-->
+    <string name="bank_owned_and_newly">Banque appartenant &amp; nouvellement</string>
+    <string name="asset_types">type d\'actif</string>
+    <string name="learn_more">Apprendre encore plus</string>
+
+    <!--Contact Us-->
+    <string name="message">Message</string>
+    <string name="feel_free_to_contact_us">N\'hésitez pas à nous contacter</string>
+    <string name="send">envoyer</string>
+
+    <!--Location Info-->
+    <string name="location_name">Nom de la localisation</string>
+    <string name="city">Ville</string>
+    <string name="documents">Documents</string>
+    <string name="transition_details">détails de la transaction</string>
+
+    <!--Dialog Make Office Here -->
+    <string name="submit_caps">SOUMETTRE</string>
+    <string name="cancel">ANNULER</string>
+    <string name="enter_your_offer_price">Montant de l\'offre</string>
+    <string name="make_your_office_here">Faites votre offre ici</string>
+    <string name="close">proche</string>
+    <string name="sell_property">Vendre une propriété</string>
+    <string name="clear">Claire</string>
+    <string name="filter">Filtre</string>
+    <string name="you">toi</string>
+    <string name="chat">Conversations</string>
+    <string name="buyer_seller">Vendeur/Acheteur</string>
+    <string name="renter">Loueur</string>
+    <string name="call">Appel</string>
+    <string name="contact_person">Contact</string>
+    <string name="forget_password">Mot de passe oublié</string>
+    <string name="login_here">Connectez-vous ici</string>
+    <string name="edit_info">Informations sur le profil</string>
+    <string name="you_need_to_login_first">Tu dois d\'abord te connecter</string>
+    <string name="location_permission_needed">L\'autorisation d\'emplacement est nécessaire pour la fonctionnalité principale</string>
+    <string name="area_sqft">Superficie(SqFt)</string>
+    <string name="area_in_sqft">Superficie en sqFt</string>
+    <string name="flat">Flat</string>
+    <string name="society">Société</string>
+    <string name="fixed_price">Prix ​​fixe</string>
+    <string name="auction">Enchères</string>
+    <string name="both">Tous les deux</string>
+    <string name="property_price">Prix ​​de l\'immobilier</string>
+    <string name="disclosure">Les divulgations</string>
+    <string name="disclosurefixures">Les divulgations/Agencements</string>
+    <string name="description">Description(Caption)</string>
+    <string name="write">écrire</string>
+    <string name="transaction_history">Historique des transactions</string>
+    <string name="open_house_live">Open House Live(télécharger une vidéo de la propriété enregistrée)</string>
+    <string name="start_date">Date de début</string>
+    <string name="end_date">Date de fin</string>
+    <string name="txtpublic">Public</string>
+    <string name="txt_private">privée</string>
+    <string name="min_bid_price">Prix ​​minimum offert</string>
+    <string name="msg_error_selltype">Veuillez sélectionner le type de vente</string>
+    <string name="msg_error_purpose">Veuillez choisir une catégorie</string>
+    <string name="msg_error_pro_type">Veuillez sélectionner le type de propriété</string>
+    <string name="msg_error_pick_ocation">Veuillez choisir l\'emplacement de la propriété</string>
+    <string name="msg_error_society">entrer localité</string>
+    <string name="msg_error_city">entrer la ville</string>
+    <string name="msg_error_bedroom">nombre de chambres</string>
+    <string name="msg_error_bathroom">nombre de salles de bain</string>
+    <string name="msg_error_area">Superficie (M2)</string>
+    <string name="backpress">S\'il vous plaît cliquer sur retour pour quitter</string>
+    <string name="msg_error_pro_price">entrer propriété prix fixe</string>
+    <string name="msg_error_date">Date de début des enchères</string>
+    <string name="msg_error_enddate">Date de fin des enchères</string>
+
+    <string name="msg_error_rent_date">Veuillez sélectionner la date de début</string>
+    <string name="msg_error_rent_enddate">Veuillez sélectionner la date de fin</string>
+    <!-- <string name="msg_error_date_video">date de début de la vidéo</string>-->
+    <string name="msg_error_enddate_video">date de fin de la vidéo</string>
+    <string name="msg_error_bid_price">S\'il vous plaît entrer prix minimum BID</string>
+    <string name="msg_error_desc">S\'il vous plaît entrer une courte description de la propriété</string>
+    <string name="msg_error_tran">S\'il vous plaît entrer l\'historique des transactions de la propriété</string>
+    <string name="msg_error_image_upload">Télécharger au moins une image</string>
+    <string name="date">DATE</string>
+    <string name="time">TEMPS</string>
+    <string name="msg_error_auction">Veuillez sélectionner le type d\'enchère</string>
+    <string name="msg_video_error">Échec du téléchargement de la vidéo</string>
+    <string name="msg_server_failed">erreur du serveur</string>
+    <string name="post_list">Liste de publication</string>
+    <string name="make_offer">Faire une offre</string>
+    <string name="house_name">nom de la propriété</string>
+    <string name="area_of_house">taille de la propriété (M2)</string>
+    <string name="invite">Invite</string>
+    <string name="sell_price_of_home">prix de vente</string>
+    <string name="images">image</string>
+    <string name="video">video</string>
+    <string name="detail">détail</string>
+    <string name="video_upload">Télécharger une video</string>
+    <string name="videofailed">la vidéo a échoué</string>
+    <string name="msg_video_view">Please select Open house video Date</string>
+    <string name="msg_video_time">Please select Open house video time</string>
+    <string name="search_people">Rechercher des personnes</string>
+    <string name="msg_user_name">S\'il vous plaît entrer le nom d\'utilisateur</string>
+    <string name="video_already_uploaded">Vidéo déjà téléchargée</string>
+    <string name="pick_video">S\'il vous plaît sélectionner la vidéo avant de télécharger sur le serveur</string>
+    <string name="file_size_limit">fichier vidéo de plus de 40 mb, </string>
+    <string name="status">Statut</string>
+    <string name="none">aucun</string>
+    <string name="filter_list">Liste de filtrage</string>
+    <string name="end_date_validation">Veuillez sélectionner la date de fin après la date de début</string>
+    <string name="search_history">Historique des recherches</string>
+    <string name="clear_chat">Effacer le chat</string>
+    <string name="all_bids">Toutes les offres</string>
+    <string name="all_offer">Toutes les offres</string>
+    <string name="delete_this_property">Supprimer cette propriété</string>
+    <string name="liked_by_users">Aimé par les utilisateurs</string>
+    <string name="type_a_message">entrer un message</string>
+    <string name="condominium">Condominium</string>
+    <string name="single_family">Single Family</string>
+    <string name="town_house">Townhouse</string>
+    <string name="semi_detached_house">Semi-Detached House</string>
+    <string name="duplex">Duplex/Triplex</string>
+    <string name="for_sell_by_owner">En vente par le propriétaire</string>
+    <string name="state">Etat</string>
+    <string name="enter_bid_amount">S\'il vous plaît entrer le montant de l\'offre</string>
+    <string name="msg_bid_amount">S\'il vous plaît entrer le montant de l\'offre.</string>
+    <string name="buy_it_now">Achetez-le maintenant</string>
+    <string name="place_bid_amount">Placer le montant de l\'enchère :</string>
+    <string name="contact_number">Numéro de contact </string>
+    <string name="level_bid_list">Liste de candidature</string>
+    <string name="message_guest">Connectez-vous à Open Space avant de passer à la fonction Application.</string>
+    <string name="expiry_date">Date d\'expiration</string>
+    <string name="cvv">CVV</string>
+    <string name="card_number">Numéro de carte</string>
+    <string name="payment_method">Mode de paiement</string>
+    <string name="invalidata">Carte invalide</string>
+    <string name="cardnumber">Entrez votre numéro de carte à 16 chiffres</string>
+    <string name="cardexpirymonth">Entrez le mois d\'expiration de votre carte</string>
+    <string name="cardyear">Entrez votre année d\'expiration de carte</string>
+    <string name="cradcvv">Entrez un numéro de cvv à 3 chiffres</string>
+    <string name="valtravelgender">Please select Travelling Partner gender</string>
+    <string name="no_data_exist">Aucune donnée existante</string>
+    <string name="msg_invite_error">Sélectionnez l\'utilisateur Ceux que vous souhaitez inviter</string>
+    <string name="msg_property">Propriété non disponible</string>
+    <string name="start_time">Heure de début</string>
+    <string name="end_time">Heure de fin</string>
+    <string name="msg_error_start_time">Veuillez sélectionner l\'heure de début des enchères</string>
+    <string name="msg_error_end_time">Veuillez sélectionner l\'heure de fin des enchères</string>
+    <string name="property_fixed_price">Prix ​​fixe de la propriété</string>
+    <string name="edit_property">Editer la propriété</string>
+    <string name="property_detail">Détail de la propriété</string>
+    <string name="property_name">Nom de la propriété</string>
+    <string name="view_details">VOIR LES DÉTAILS</string>
+    <string name="bid_price">Prix ​​de l\'offre</string>
+    <string name="processing_fee">Frais de traitement</string>
+    <string name="initail_amount">Montant initial</string>
+    <string name="pay_initial_amount">Payer le montant initial</string>
+    <string name="select_payment_method">Sélectionnez le mode de paiement</string>
+    <string name="paypla_failure">un échec extrêmement improbable:</string>
+    <string name="paypal_cancelled">L\'utilisateur a annulé.</string>
+    <string name="invalid_paypal_detail">Un paiement ou une configuration PayPal non valide a été soumis. S\'il vous plaît voir la documentation.</string>
+    <string name="receipts_and_warranties">Recettes et garanties pour les appareils, les finis et les mises à niveau</string>
+    <string name="plans_and_permits">Plans et permis pour tous les ajouts et mises à niveau</string>
+    <string name="certificates_of_occupancy">Les certificats d\'occupation, qui indiquent la conformité aux codes du bâtiment municipaux</string>
+    <string name="loan_document">Loan documents, including first mortgage, second mortgage, and home equity line of credit</string>
+    <string name="latest_utility_bills">Dernières factures de services publics</string>
+    <string name="latest_property_tax_bill">Latest property tax bill</string>
+    <string name="propert_title">Titre</string>
+    <string name="survay">Sondage</string>
+    <string name="constract_accupation">Permis de construction et d\'occupation</string>
+    <string name="profe_insurance">Preuve d\'assurance</string>
+    <string name="utility_bill">Factures d\'électricité</string>
+    <string name="homeownwer_associate">Homeowners’ association covenants and agreements</string>
+    <string name="specility_document">Documents spécialisés, tels que la preuve du statut de repère</string>
+    <string name="floor_plan">Plan d\'étage ou plans, si disponibles</string>
+    <string name="list_of_fixtures_amenities">Liste des installations et équipements</string>
+    <string name="upload">Télécharger</string>
+    <string name="agreement_paper">S\'il vous plaît télécharger le document de l\'accord de propriété:</string>
+    <string name="contract_paper">S\'il vous plaît télécharger le papier de contrat de propriété:</string>
+    <string name="disclosure_questionnaires">Questionnaires de divulgation</string>
+    <string name="disclosure_documents">Documents de divulgation</string>
+    <string name="how_open_house_live_work">How open house live work</string>
+    <string name="as_is">COMME SI</string>
+    <string name="buy_now">Acheter maintenant</string>
+    <string name="msg_agree_validation">d\'accord si vous lisez tous les avertissements.</string>
+    <string name="purchase_agreement">Convention d\'achat</string>
+    <string name="upload_successfully">Télécharger avec succès</string>
+    <string name="invalid_file">type de fichier invalide</string>
+    <string name="property_not_exist">Property Doesn\'t Exist</string>
+    <string name="remaining_amount">Montant restant</string>
+    <string name="total_initial_amount">Montant initial total</string>
+    <string name="title_fee">Frais de titre</string>
+    <string name="closing_msg">Sélectionnez une date de clôture du paiement dû</string>
+    <string name="something_wrong">Quelque chose s\'est mal passé</string>
+    <string name="payment_Success">paiement réussi</string>
+    <string name="payment_failed">Paiement échoué</string>
+    <string name="payable_initail_amount">Montant initial payable</string>
+    <string name="property_acthual_price">Prix ​​actuel de la propriété</string>
+    <string name="select_closing_date">Date de clôture estimée:</string>
+    <string name="buy_property">Acheter une propriété</string>
+    <string name="property_list">Mes propriétés</string>
+    <string name="purched_property">Propriété achetée</string>
+    <string name="under_contract">Sous contrat</string>
+    <string name="house_live">OPEN HOUSE LIVE</string>
+    <string name="buy_property_list">Propriété achetée</string>
+    <string name="video_info">C\'est là que vous avez planifié une vraie journée portes ouvertes et que vous allez retransmettre en direct l\'événement. Cette option vous permet d\'interagir avec les acheteurs potentiels sur place et en ligne. Vous aurez besoin de bien connaître la propriété, et il serait utile pour vous d\'être en mesure de jeter dans les anecdotes intéressantes sur la maison que vous diffusez. Vous pouvez également profiter de lulls in foot traffic pour vraiment se concentrer sur votre public en ligne, et puis lorsque le trafic reprend, utilisez un trépied pour continuer votre fil en direct que vous accueillez et de parler avec les invités sur place.</string>
+    <string name="social_login_email_validation">You Can\'t Login Rigth Now .We don\'t have accesss to get email address</string>
+    <string name="property_not_available">Propriété non disponible</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="video_delete">Vidéo déjà téléchargée, veuillez supprimer la vidéo précédente pour en télécharger une nouvelle.</string>
+    <string name="non_refundable_fee">Frais non remboursables: $25</string>
+    <string name="the_property">LA PROPRIÉTÉ</string>
+    <string name="sqare_feer">Square Feet</string>
+    <string name="rent_amount">montant du loyermontant du loyer(Par mois)</string>
+    <string name="street_address">Address:</string>
+    <string name="zip">Zip Code</string>
+    <string name="yes">Qui</string>
+    <string name="no">Non</string>
+    <string name="describe_the_parking">Décrivez le parking:</string>
+    <string name="tenancy">LOCATION</string>
+    <string name="type_length">Type/ Longueur:</string>
+    <string name="applicant_details">DÉTAILS DU DEMANDEUR</string>
+    <string name="full_name">Nom complet</string>
+    <string name="dob">date de naissance</string>
+    <string name="driver_s_license_no">Carte d\'identité</string>
+    <string name="phone">Phone</string>
+    <string name="other_occupants">Autres occupants?</string>
+    <string name="describe_occupants">Décrire</string>
+    <string name="vehicles">Véhicules?</string>
+    <string name="ever_been_convicted_of_a_crime">Jamais été reconnu coupable d\'un crime?</string>
+    <string name="bankruptcy">Jamais déposé pour faillite?</string>
+    <string name="ever_been_evicted">Jamais été expulsé?</string>
+    <string name="current_employment">EMPLOI ACTUEL</string>
+    <string name="company">compagnie</string>
+    <string name="occupation_title">Profession / Titre</string>
+    <string name="how_long">Combien de temps?</string>
+    <string name="gross_income">Revenu brut($)</string>
+    <string name="previous_employment">EMPLOI PRÉCÉDENT</string>
+    <string name="current_residence">RÉSIDENCE ACTUELLE</string>
+    <string name="how_long_address">Combien de temps à cette adresse?</string>
+    <string name="Lease_date">Date d\'expiration actuelle du bail</string>
+    <string name="desire_for_moving">Envie de déménager?</string>
+    <string name="current_landlord">PROPRIÉTAIRE ACTUEL</string>
+    <string name="name">Nom</string>
+    <string name="address">Address</string>
+    <string name="personal_references">RÉFÉRENCES PERSONNELLES</string>
+    <string name="relationship">Relation</string>
+    <string name="previous_landloard">PROPRIÉTAIRE PRÉCÉDENT</string>
+    <string name="previous_residence">RÉSIDENCE PRÉCÉDENTE</string>
+    <string name="rental_application">Application de location résidentielle</string>
+    <string name="additional_details_if_any">DÉTAILS SUPPLÉMENTAIRES (SI SEULEMENT)</string>
+    <string name="addition_info">Je certifie par la présente que j\'ai au moins 18 ans. Demandeur déclare que tous les renseignements donnés dans cette demande sont vrais et exacts. Le demandeur autorise par les présentes la vérification de toutes les références et de tous les faits, y compris, mais sans s\'y limiter, les propriétaires actuels et antérieurs, les employeurs et les références personnelles. Le demandeur autorise par les présentes le propriétaire/agent à obtenir tout rapport illégal de détention, de crédit, de contrôle téléphonique et/ou D\'antécédents criminels. Le demandeur s\'engage à fournir des références personnelles et/ou de crédit supplémentaires sur demande. Le demandeur comprend que des renseignements incomplets ou inexacts fournis dans la demande peuvent causer un retard dans le traitement, ce qui peut entraîner un refus de bail. Le demandeur renonce par les présentes à toute réclamation et dégage de toute responsabilité toute personne fournissant ou obtenant ladite vérification ou information supplémentaire.</string>
+    <string name="enter_name">Entrez le nom</string>
+    <string name="enter_dob">Date de naissance</string>
+    <string name="enter_driver_linence">Carte d\'identité</string>
+    <string name="enter_state">S\'il vous plaît entrer l\'état</string>
+    <string name="enter_zip_code">Code postal</string>
+    <string name="living_time">Veuillez entrer combien de temps vivez-vous à cette adresse</string>
+    <string name="error_curr_residance">S\'il vous plaît entrez votre désir de quitter votre résidence actuelle</string>
+    <string name="zip_code_validation">Entrez un code postal valide</string>
+    <string name="msg_dob">Entrez votre date de naissance</string>
+    <string name="rent_your_property">Voulez-vous louer votre propriété?</string>
+    <string name="val_rent_amount">S\'il vous plaît entrer le montant du loyer</string>
+    <string name="val_pets_allowed">S\'il vous plaît confirmer si les animaux sont autorisés</string>
+    <string name="val_smoking_allow">S\'il vous plaît confirmer permettre</string>
+    <string name="val_parking_allow">S\'il vous plaît confirmer le stationnement disponible</string>
+    <string name="rented_property">Propriété louée</string>
+    <string name="rentel_property">Propriété locative</string>
+    <string name="payment_history">historique de paiement</string>
+    <string name="apply_for_loan"><u>Demander un prêt</u></string>
+    <string name="txt_apply_for_loan">Demander un prêt</string>
+    <string name="request_a_tour">Demander un tour</string>
+    <string name="select_tour_date">Sélectionnez la date du tour</string>
+    <string name="news_feeds">Fil d\'actualité</string>
+    <string name="share">Partager</string>
+    <string name="coming_soon">Bientôt disponible.</string>
+    <string name="servide_provider">Fournisseur de services</string>
+    <string name="comments">Tous les commentaires</string>
+    <string name="all_likes">Tous les goûts</string>
+    <string name="share_with">Partager avec</string>
+    <string name="share_social">Partager la propriété avec:</string>
+    <string name="saved_feeds">Message enregistré</string>
+    <string name="shared">partagé</string>
+    <string name="profile">Profil</string>
+    <string name="signup_here">Application de fournisseur de service</string>
+    <string name="phone_number">NUMÉRO DE TÉLÉPHONE</string>
+    <string name="business_type">TYPE DE COMMERCE</string>
+    <string name="business_since">AFFAIRES DEPUIS</string>
+    <string name="business_description">DESCRIPTION DE L\'ACTIVITÉ</string>
+    <string name="service_location">DEMANDE DE SERVICE DISTANCE</string>
+    <string name="lead_notification_preference">PREFERENCE DE LA NOTIFICATION AU PLOMB</string>
+    <string name="upload_business_logo">CHARGEMENT DU LOGO DE L\'ENTREPRISE</string>
+    <string name="cannot_empty">ne peut pas vider</string>
+    <string name="val_pass_conpass">Mot de passe et confirmer le mot de passe doit être identique</string>
+    <string name="how_did_you_get_started">COMMENT AVEZ-VOUS COMMENCÉ?</string>
+    <string name="what_are_your_specialties">QUELLES SONT VOS SPÉCIALITÉS?</string>
+    <string name="any_discount_or_special_offers">TOUT REMISE OU OFFRE SPÉCIALE?</string>
+    <string name="set">ensemble</string>
+    <string name="business_name">CATÉGORIE DE FOURNISSEUR DE SERVICES</string>
+    <string name="buss_catogery">Catégorie Business</string>
+    <string name="add_work">Ajouter du travail</string>
+    <string name="my_work">Mon travail</string>
+    <string name="history">History</string>
+    <string name="service_price">Prix ​​du service</string>
+    <string name="catogery">Category</string>
+    <string name="distance">Distance</string>
+    <string name="desired_service_location">Lieu de service souhaité</string>
+    <string name="val_desired_service_location">Veuillez entrer le lieu de service souhaité</string>
+    <string name="select_date">Sélectionner une date</string>
+    <string name="desired_date">Date de service souhaitée</string>
+    <string name="problem_description">Description du problème</string>
+    <string name="enter_problem_description">Entrez la description du problème</string>
+    <string name="sp_take_appointment">Note:- Le prestataire de services vous appellera pour prendre rendez-vous.</string>
+    <string name="proceed">Procéder</string>
+    <string name="all_request">Toutes les demandes(Service)</string>
+    <string name="service_provicer_signup_note">Dépôt de garantie: Le prestataire de services déposera 39,99 $ dans le compte de système d\'exploitation pour la vérification des antécédents. Une fois approuvé, ce dernier devrait recevoir un chèque en or en tant que fournisseur de services approuvé..</string>
+    <string name="term_condition">Accepter les termes et conditions avant l\'inscription</string>
+    <string name="service_request">Demande de service</string>
+    <string name="request">Demande</string>
+    <string name="completed">Terminé</string>
+    <string name="accept">Accepté</string>
+    <string name="bad_error">Quelque chose a mal tourné</string>
+    <string name="val_rate">Veuillez évaluer votre expérience avec un fournisseur de services</string>
+    <string name="sp_payment">Votre paiement est effectué. Une fois approuvé par OS Specilist, vous pouvez ajouter votre travail dans OS.</string>
+    <string name="work_description">Description du travail</string>
+    <string name="id_profe">Preuve d\'identité</string>
+    <string name="id_profe_file">Sélectionnez une image d\'identité</string>
+    <string name="driving_licence">Carte d\'identité</string>
+    <string name="voter_id_card">Carte d\'identité d\'électeur</string>
+    <string name="aadhar_card">Aadhar Card</string>
+    <string name="passport">Passport</string>
+    <string name="post_job">You can post jobs  by  \"Post Needed Job\" and , Service provider will claim the jobs if they want</string>
+    <string name="post_needed_job">Poste recherché emploi</string>
+    <string name="service_provider_list">Liste des fournisseurs de services</string>
+    <string name="post_project">Poste projet</string>
+    <string name="post_a_project">Publier un projet</string>
+    <string name="personalize_your_post">Personnalisez votre poste</string>
+    <string name="summary">Sommaire</string>
+    <string name="post_info">Personnalisez votre poste en ajoutant des informations spécifiques</string>
+    <string name="min_budget">MIN BUDGET ($)</string>
+    <string name="max_budget">MAX BUDGET ($)</string>
+    <string name="postdescription">Description du service</string>
+    <string name="val_min_budget">Entrez votre budget minimum</string>
+    <string name="enter_max_budget">Entrez votre budget maximum</string>
+    <string name="file_attachment">Pièce jointe(5 images nécessaires)</string>
+    <string name="service_post">Poste de service</string>
+    <string name="bid_on_this_post">enchérir sur ce poste</string>
+    <string name="post_service">Poster un service</string>
+    <string name="post_the_bid">Poster la candidature</string>
+    <string name="my_post_service">Mon service postal</string>
+    <string name="enter_praposal">S\'il vous plaît entrer praposal</string>
+    <string name="enter_task_days">S\'il vous plaît entrer combien de jours vous avez besoin.</string>
+    <string name="val_budget">Le budget max sera supérieur au min</string>
+    <string name="awarded">Récompensé</string>
+    <string name="my_post">Tout post</string>
+    <string name="running">Fonctionnement</string>
+    <string name="project_start_date">Date de début du projet</string>
+    <string name="review_feedback">Review &amp; Feedback</string>
+    <string name="project_detail">Détail du projet</string>
+    <string name="create_milestone">Créer un jalon</string>
+    <string name="val_work_desc">Veuillez saisir une description de travail</string>
+    <string name="enter_amount">Entrer le montant</string>
+    <string name="val_rate_comment">S\'il vous plaît ajouter des commentaires</string>
+    <string name="desired_budget">Budget souhaité</string>
+    <string name="my_bid">Ma soumission</string>
+    <string name="my_posted_bid">Toutes les offres/Emplois</string>
+    <string name="pending">En attente</string>
+    <string name="close_project">Fermer le projet</string>
+    <string name="awarded_project">Projet primé</string>
+    <string name="running_project">Projet en cours</string>
+    <string name="completed_project">Projet terminé</string>
+    <string name="post_this_service">Poster ce service</string>
+    <string name="job_post">Mon service postal</string>
+    <string name="praposal_description">Description du poste</string>
+    <string name="praposal_days">Jours de proposition</string>
+    <string name="praposal_amount">Montant de la proposition</string>
+    <string name="title_rent_property">Liste des biens en location</string>
+    <string name="rent_check1">autoriser et permettre à Open Space Innovations, (OSI) d\'effectuer des vérifications des antécédents et d\'obtenir des renseignements à mon sujet auprès de sources de rapports de crédit, de propriétaires actuels et antérieurs, de références personnelles et professionnelles, d\'employeurs, de banques et d\'organismes d\'application de la loi. Et partager cette information avec un locateur potentiel, des institutions de location et un tiers détenteur de bail.</string>
+    <string name="rent_check2">J\'autorise également et donne la permission à toutes les parties énumérées de divulguer toute information demandée à mon sujet au propriétaire ou au gérant de la location indiqué ci-dessus.</string>
+    <string name="rent_check3">De plus, j\'autorise et autorise le propriétaire ou le gestionnaire de la location à obtenir des renseignements à jour chaque année et à l\'avenir pour le renouvellement de la location et à des fins de collecte si cela est jugé nécessaire..</string>
+    <string name="rent_check4">Merci à toutes les parties pour votre coopération avec cette affaire.</string>
+    <string name="mobile">Mobile</string>
+    <string name="signature">Signature</string>
+    <string name="disclaimer_form">formulaire de renonciation</string>
+    <string name="disclaimer_form_approval">Approbation du formulaire de renonciation</string>
+    <string name="social_security_number">Numéro d\'identification</string>
+    <string name="val_sp_upload_check">Vous devez télécharger au moins 5 images du service souhaité..</string>
+    <string name="sign_val">La signature est obligatoire</string>
+    <string name="check_disclaimer">S\'il vous plaît vérifier si vous êtes d\'accord avec disclaimer</string>
+    <string name="msg_pending_approval">L’approbation du propriétaire est en attente pour votre demande. Une fois approuvé, vous recevrez une notification.</string>
+    <string name="rent_duration">Durée de location</string>
+    <string name="vacation_renter">Destination de vacances (Moins de 1 mois)</string>
+    <string name="long_term_renter">Location longue durée</string>
+    <string name="offer_already_submitted">* Prix ​​de l\'offre déjà soumis</string>
+    <string name="from_camera">De la caméra</string>
+    <string name="from_gallery">De la galerie</string>
+    <string name="add_photo">Ajoutez votre photo...</string>
+    <string name="permission_needed">Permission nécessaire</string>
+    <string name="sp_val_on_fb">Vous ne pouvez pas vous connecter en tant que fournisseur de services de cette façon</string>
+    <string name="invertor_val_on_fb">Vous ne pouvez pas vous connecter en tant qu’investisseur de cette façon</string>
+    <string name="agent_val_on_fb">Vous ne pouvez pas vous connecter en tant qu’agent de cette façon</string>
+    <string name="serach_property">Rechercher une propriété ici</string>
+    <string name="property_news_feed">Fil d\'actualité</string>
+    <string name="service_provider">fournisseur de services</string>
+    <string name="search_rent_property">Rechercher Louer une propriété ici</string>
+    <string name="rent_property_list">Louer une liste de biens</string>
+    <string name="add_rent_property">Ajouter un bien à la location</string>
+    <string name="my_bid_list">Offers On My Listed Properties</string>
+    <string name="payment">Payment</string>
+    <string name="rent_request">Demande de location</string>
+    <string name="not_available">Indisponible</string>
+    <string name="select_renter_type">Veuillez sélectionner le type de locataire</string>
+    <string name="val_landload_contact">S\'il vous plaît entrer le numéro du propriétaire</string>
+    <string name="val_landloard_email">S\'il vous plaît entrer l\'email du propriétaire</string>
+    <string name="val_rent_reference_email">1er email de référence</string>
+    <string name="val_rent_ref_email">2ème email de référence</string>
+    <string name="val_rent_ref_third">3ème email de référence</string>
+    <string name="val_other_disclosure">S\'il vous plaît entrer autre divulgation</string>
+    <string name="val_signature">Impossible d\'enregistrer une signature vierge</string>
+    <string name="val_signature_store">Impossible d\'enregistrer la signature</string>
+    <string name="title_schedule_tour">Visite programmée</string>
+    <string name="just_now">Juste maintenant</string>
+    <string name="ago">depuis</string>
+    <string name="renter_name">Nom du locataire:</string>
+    <string name="renter_contact">Contact locataire:</string>
+    <string name="landloard_name">Nom du propriétaire:</string>
+    <string name="landlaord_contact">Contact propriétaire:</string>
+    <string name="property_likes">Propriété aime</string>
+    <string name="user_like_property">L\'utilisateur aime votre propriété</string>
+    <string name="avg_rate">Avg Bids(USD):$</string>
+    <string name="bid">les enchères</string>
+    <string name="in">dans</string>
+    <string name="days">journées</string>
+    <string name="val_trans_detail">Aucun détail de transition trouvé!!</string>
+    <string name="val_description">Aucune description trouvée!!</string>
+    <string name="val_disclosure">Aucune divulgation trouvée!!</string>
+    <string name="val_self_apply">Vous ne pouvez pas faire une demande de location sur votre propriété</string>
+    <string name="apply_for_rent">APPLIQUER POUR LOUER</string>
+    <string name="pay_for_rent">PAYER POUR LOUER</string>
+    <string name="sold">Vendu</string>
+    <string name="unsold">Invendu</string>
+    <string name="pro_rent">Location de propriété(Par mois)</string>
+    <string name="pro_proce_not_available">Valeur fixe de la propriété : N/A</string>
+    <string name="pro_fixed_val">Valeur fixe de la propriété:</string>
+    <string name="final_bid">Offre finale:</string>
+    <string name="final_bid_not_available">Offre finale: N/A</string>
+    <string name="level_start_date">Date de début:</string>
+    <string name="level_end_date">Date de fin:</string>
+    <string name="level_start_time">Heure de début:</string>
+    <string name="level_end_time">Heure de fin:</string>
+    <string name="discover">recherche de maison</string>
+    <string name="recommended">conseillé</string>
+    <string name="recently_view">vu récemment</string>
+    <string name="val_self_message">Vous ne pouvez pas vous envoyer de message</string>
+    <string name="val_self_tour">Vous ne pouvez pas planifier de visite sur la propriété</string>
+    <string name="val_virthual_tour">Visite virtuelle non disponible</string>
+    <string name="val_tour_date">Veuillez sélectionner la date de la tournée</string>
+    <string name="val_tour_time">Veuillez sélectionner l\'heure de la visite</string>
+    <string name="val_enter_name">S\'il vous plaît entrer le nom</string>
+    <string name="val_enter_email">S\'il vous plaît entrer email</string>
+    <string name="val_enter_val_email">S\'il vous plaît entrer email valide</string>
+    <string name="val_enter_contact">S\'il vous plaît entrer contact</string>
+    <string name="val_enter_valid_conatct">S\'il vous plaît entrer un contact valide</string>
+    <string name="val_self_buy_property">Impossible d\'acheter votre propre propriété</string>
+    <string name="message_request">La demande a été envoyée avec succès</string>
+    <string name="msg_offer_already_submitted">Prix ​​d\'offre déjà soumis pour cette propriété</string>
+    <string name="msg_self_offer">Impossible d\'acheter votre propre propriété</string>
+    <string name="pro_not_available_for_offer">Propriété non disponible à l\'offre</string>
+    <string name="val_occupant_desc">Veuillez entrer la description des occupants</string>
+    <string name="val_enter_pets_desc">S\'il vous plaît entrez Animaux Description</string>
+    <string name="val_vehicles_desc">Veuillez entrer la description du véhicule</string>
+    <string name="val_crime_desc">S\'il vous plaît entrer la description du crime</string>
+    <string name="val_enter_bankuptcy">S\'il vous plaît entrer la description de la faillite</string>
+    <string name="val_evict_desc">Veuillez entrer la description de l\'expulsion</string>
+    <string name="val_employment_address_zip">Veuillez entrer un code postal d\'adresse d\'emploi valide</string>
+    <string name="val_current_residence">S\'il vous plaît entrer l\'adresse de résidence actuelle</string>
+    <string name="map">carte</string>
+    <string name="list">List</string>
+    <string name="current_position">Position actuelle</string>
+    <string name="val_video">S\'il vous plaît cliquer pour télécharger la vidéo sélectionnée</string>
+    <string name="add_video">Ajouter votre vidéo...</string>
+    <string name="pick_documents">Sélectionnez vos documents...</string>
+    <string name="pick_doc">Sélectionnez vos documents</string>
+    <string name="chat_box">Messages</string>
+    <string name="landlord">Propriétaire/Directeur</string>
+    <string name="tenant_renter">Locataire(Loueur)</string>
+    <string name="survey">• Sondage</string>
+    <string name="construction_and_occupation_permits">• Permis de construction et d\'occupation</string>
+    <string name="proof_of_homeowner_s_insurance">• Preuve de l\'assurance du propriétaire</string>
+    <string name="utility_bills">• Factures d\'électricité</string>
+    <string name="homeowners_association_covenants_and_agreements">• Conventions et accords des associations de propriétaires</string>
+    <string name="specialty_documents_such_as_proof_of_landmark_status">•Documents spécialisés, tels que la preuve du statut de repère</string>
+    <string name="floor_plan_or_blueprints_if_available">• Plan d\'étage ou plans, si disponibles</string>
+    <string name="applying_filter">Appliquer des filtres</string>
+    <string name="social_media">médias sociaux</string>
+    <string name="non_refundable">(Non remboursable)</string>
+    <string name="level_date">Date</string>
+    <string name="payment_note">NOTE: Vous devez payer le montant restant dans les 20 prochains jours</string>
+    <string name="my_praposal">Ma proposition</string>
+    <string name="amount">MONTANT($)</string>
+    <string name="total_payable_amount">Montant total à payer</string>
+    <string name="pay_now">Payez maintenant</string>
+    <string name="note_intial_amount">NOTE: C\'est le montant du dépôt anticipé initial.</string>
+    <string name="or">ou</string>
+    <string name="private_patios">Patios privés</string>
+    <string name="washers_and_dryers_connection">Connexion laveuses et sécheuses</string>
+    <string name="wood_flooring">Parquet</string>
+    <string name="carpet_flooring">Tapis de sol</string>
+    <string name="ceiling_fans">Ventilateurs de plafond</string>
+    <string name="fireplace">Cheminée</string>
+    <string name="pets_allowed">Animaux acceptés ?</string>
+    <string name="parking_allowed">Parking autorisé ?</string>
+    <string name="if_yes_describe_parking_allowed">Si stationnement disponible, commenter</string>
+    <string name="clear_pad">Clair</string>
+    <string name="save_signature">Enregistrer la signature</string>
+    <string name="already_member_login">Déjà membre ? Login</string>
+    <string name="problem_images">Problème Images</string>
+    <string name="milestone_history">Histoire marquante</string>
+    <string name="level_accept">Acceptez</string>
+    <string name="skip">Sauter</string>
+    <string name="msg_payment_success">Votre paiement est réussi, Le spécialiste vous contactera pour un traitement ultérieur.</string>
+    <string name="cont">Continuez</string>
+    <string name="msg_payment_error">Quelque chose s\'est mal passé, nous n\'avons pas reçu d\'argent.</string>
+    <string name="add_service_type">AJOUTER UN TYPE DE SERVICE</string>
+    <string name="enter_service_type">Entrez le type de service</string>
+    <string name="enter_service_price">Entrez le prix du service</string>
+    <string name="congratulations">Félicitation</string>
+    <string name="msg_bid_success">Votre offre livre avec succès.</string>
+    <string name="ok">D\'accord</string>
+    <string name="paypal">Paypal</string>
+    <string name="credit_card">Credit card</string>
+    <string name="hint_experience">Comment était votre expérience</string>
+    <string name="comment">Commentaire</string>
+    <string name="gold_os_certified">Certifié Gold OS</string>
+    <string name="not_certified">Non certifié</string>
+    <string name="edit_profile">Editer le profil</string>
+    <string name="beds">chambre</string>
+    <string name="bath">salle de bains</string>
+    <string name="sq_feet">sq Feet</string>
+    <string name="when">quand</string>
+    <string name="where">où</string>
+    <string name="current_max_bid">Enchère maximum actuelle</string>
+    <string name="bid_amount">Montant de la soumission</string>
+    <string name="bid_place">Lieu de candidature</string>
+    <string name="addess">Addess</string>
+    <string name="virtual_tour">Tour virtuel</string>
+    <string name="add_sub_category">Ajouter une sous catégorie</string>
+    <string name="working_days">Jours de travail</string>
+    <string name="working_hours">Heures d\'ouverture</string>
+    <string name="add_service_image">Ajouter une image de service</string>
+    <string name="to">à</string>
+    <string name="add_problem_image">Ajouter une image problématique</string>
+    <string name="requested_amount">montant demandé($)</string>
+    <string name="the_property_detail">Le détail de la propriété</string>
+    <string name="about_renter">A propos du loueur</string>
+    <string name="scheduled_date_for_visit">Date prévue pour la visite</string>
+    <string name="scheduled_time_for_visit">Temps de visite prévu</string>
+    <string name="email_address">Adresse e-mail</string>
+    <string name="decline">déclin</string>
+    <string name="rent_per_month">Loyer par mois ($)</string>
+    <string name="preferred_location_for_rent">Emplacement préféré à louer</string>
+    <string name="pets">animaux domestiques?</string>
+    <string name="renter_type">Type de locataire:</string>
+    <string name="renter_reference_check_form">Formulaire de vérification des références du locataire</string>
+    <string name="rental_applicant">(demandeur de location)</string>
+    <string name="approve">Approuver</string>
+    <string name="reject">Rejeter</string>
+    <string name="select_time">Sélectionnez l\'heure</string>
+    <string name="send_your_request">Envoyez votre demande</string>
+    <string name="total_days">Nombre de jours</string>
+    <string name="service_delivery_days">Jours de livraison du service</string>
+    <string name="timing_of_service_delivery">Moment de la prestation de service</string>
+    <string name="ratting_review">Évaluation &amp; La revue></string>
+    <string name="view_more">Voir plus...</string>
+    <string name="apply">Appliquer</string>
+    <string name="award">Prix</string>
+    <string name="level_amount">Montant:-</string>
+    <string name="paid">Payé</string>
+    <string name="unpaid">Non payé</string>
+    <string name="apply_now">APPLIQUER MAINTENANT</string>
+    <string name="payment_recieved">Paiement reçu</string>
+    <string name="level_bid">offre</string>
+    <string name="service_images">Images de service</string>
+    <string name="enter_your_confirm_password">Confirmez le mot de passe</string>
+    <string name="pick_your_address">Choisissez votre adresse</string>
+    <string name="text_message">Message texte</string>
+    <string name="upload_selected_id_proof">télécharger une preuve d\'identité</string>
+    <string name="pick_file">Choisir un fichier</string>
+    <string name="login">S\'identifier</string>
+    <string name="rent">a louer</string>
+    <string name="property_for_rent">Propriété à louer</string>
+    <string name="more_like">plus de goûts</string>
+    <string name="likes">Aime</string>
+    <string name="monday">Lundi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="thusday">Jeudi</string>
+    <string name="friday">Vendredi</string>
+    <string name="saturday">samedi</string>
+    <string name="sunday">dimanche</string>
+    <string name="val_enter_catogery">Entrez sous-catogery</string>
+    <string name="val_enter_sab_catogery">Entrez le prix de la sous-catégorie</string>
+    <string name="val_msg_buss_cat">Veuillez choisir votre entreprise</string>
+    <string name="val_msg_buss_skills">S\'il vous plaît ajouter vos compétences en affaires</string>
+    <string name="val_msg_working_days">Veuillez sélectionner vos jours de travail</string>
+    <string name="val_msg_working_satrt_time">Veuillez sélectionner votre heure de début de travail</string>
+    <string name="val_msg_working_end_time">Veuillez sélectionner votre heure de fin de travail</string>
+    <string name="val_msg_work_image">S\'il vous plaît télécharger votre image de travail</string>
+    <string name="enter">Entrer</string>
+    <string name="wallet_balance">Balance de Portefeuille:</string>
+    <string name="msg_already_post_bid">Vous avez déjà posté une offre</string>
+    <string name="work_desc">Description du travail:</string>
+    <string name="req_amount">montant demandé:</string>
+    <string name="open_space">Open Space</string>
+    <string name="msg_close_project">Voulez-vous fermer ce projet ?</string>
+    <string name="level_add_work">Ajouter du travail ici</string>
+    <string name="level_complete">terminé</string>
+    <string name="year_picker">Sélecteur d\'année</string>
+    <string name="pick_location">Choisissez votre emplacement</string>
+    <string name="val_zip_code">Entrez votre code postal</string>
+    <string name="val_buss_cat">Sélectionnez le nom de la catégorie d\'entreprise</string>
+    <string name="val_buss_type">Sélectionnez le type d\'entreprise</string>
+    <string name="val_buss_since">en affaires depuis</string>
+    <string name="val_buss_desc">Entrez la description de votre entreprise</string>
+    <string name="val_start_buss">comment as-tu commencé les affaires</string>
+    <string name="val_specility">Entrez votre spécificité</string>
+    <string name="val_buss_req_dist">Sélectionner la distance de la demande commerciale</string>
+    <string name="val_pick_profile">Veuillez choisir une photo de profil</string>
+    <string name="val_buss_logo">S\'il vous plaît choisir le logo de l\'entreprise</string>
+    <string name="val_noti_pref">Veuillez sélectionner une préférence de notification</string>
+    <string name="posts">posts</string>
+    <string name="property">Propriété</string>
+    <string name="here_are_some_questionnaire">Voici un questionnaire</string>
+    <string name="cash_buyer">Êtes-vous un acheteur au comptant</string>
+    <string name="hint_cash_buyer">Quel type de financement obtiendrez-vous?</string>
+    <string name="ques_neightbourhood">Quels quartiers préférez-vous acheter?</string>
+    <string name="ques_price_rang">Quelle gamme de prix (ballpark) cherchez-vous à acheter dans ces domaines particuliers</string>
+    <string name="ques_part_town">Y a-t-il des quartiers de la ville que vous n\'achèterez pas</string>
+    <string name="ques_bed_bath">Y a-t-il un nombre minimum de chambres ou de salles de bains dont vous avez besoin</string>
+    <string name="ques_footage">Y a-t-il une superficie minimale en pieds carrés dont vous avez besoin?</string>
+    <string name="ques_construction">Quel type de construction préférez-vous</string>
+
+
+    <string name="ques_signle_multifamily">N\'achetez-vous que des propriétés unifamiliales, ou êtes-vous également intéressé par les logements collectifs?</string>
+    <string name="ques_rehub">Cherchez-vous des propriétés à réhabiliter et revendre, ou envisagez-vous d’acheter et de conserver</string>
+    <string name="describe">Décrire</string>
+    <string name="ques_fixer">Êtes-vous disposé à faire des rééducations complètes, ou cherchez-vous seulement de dessus fixateur cosmétique</string>
+    <string name="ques_close_time">Quand voulez-vous acheter et combien de temps avez-vous généralement besoin de fermer?</string>
+    <string name="ques_own_invertment">Possédez-vous des propriétés d\'investissement</string>
+    <string name="how_many_unit">Combien d\'unités sur chaque marché</string>
+    <string name="ques_intersred_property">Quel type de propriété vous intéresse?</string>
+    <string name="condos">Condos</string>
+    <string name="single_family_homes">Maisons unifamiliales</string>
+    <string name="_2_4_unit_plexes_apartments">Appartements de 2 à 4 unités en plex</string>
+    <string name="commercial_property">Propriété commerciale</string>
+    <string name="ques_risk_tolerance">Quel est votre style d\'investissement / tolérance au risque</string>
+    <string name="conservative">Conservateur</string>
+    <string name="moderate">Modéré</string>
+    <string name="aggressive">Agressif</string>
+    <string name="ques_goal">Quels sont vos objectifs d’investissement immobilier pour les domaines suivants</string>
+    <string name="describe_within_one_year">Décrivez l\'objectif d\'investissement en un an</string>
+    <string name="describe_within_five_year">Décrivez l\'objectif d\'investissement d\'ici cinq ans</string>
+    <string name="describe_within_two_year">Décrivez l\'objectif d\'investissement dans les deux ans</string>
+    <string name="wood_frame">cadre en bois</string>
+    <string name="concrete_block">bloc de béton</string>
+    <string name="desc_town">S\'il vous plaît décrire les parties de la ville</string>
+    <string name="val_bed_required">Veuillez décrire le nombre de chambres et de salles de bains dont vous avez besoin</string>
+    <string name="val_area_require">Veuillez décrire la superficie requise</string>
+    <string name="please_describe">Veuillez décrire quel type de construction préférez-vous </string>
+    <string name="val_invest_property">Veuillez décrire la propriété d\'investissement</string>
+    <string name="val_questionnarir">Veuillez remplir tout le questionnaire avant de vous connecter</string>
+    <string name="pref_renter">Veuillez sélectionner le type de locataire préféré</string>
+    <string name="if_yes_describe_pets_allowed">Si les animaux de compagnie le permettent, commentez</string>
+    <string name="smoking_allowed">Autorisation de fumer ?</string>
+    <string name="if_yes_describe_smoking_allowed">Si fumer est permis, commenter</string>
+    <string name="pets_status">Animaux non autorisés</string>
+    <string name="smoking_status">Fumer est interdit</string>
+    <string name="parking_status">Parking non autorisé</string>
+    <string name="level_pets">Animaux domestiques: </string>
+    <string name="level_smoking">Fumeur: </string>
+    <string name="level_parking">Parking: </string>
+    <string name="pro_type">Type de propriété</string>
+    <string name="get_os_offer">obtenir Open Space (OSO) Offre en espèces.</string>
+    <string name="os_offer_msg">Vous pouvez proposer de vendre votre maison directement à Open Space et recevoir une offre en espèces de notre part.</string>
+    <string name="manage_document">Gérer le document</string>
+    <string name="upload_doc">Télécharger des documents</string>
+    <string name="manage_doc">Gérer les documents</string>
+    <string name="sel_doc_name">Sélectionnez le nom des documents</string>
+    <string name="download">Télécharger</string>
+    <string name="select_documents">Sélectionnez le type de documents</string>
+    <string name="val_doc_type">Veuillez sélectionner le type de document</string>
+    <string name="recieve">Reçu</string>
+    <string name="oso_cash_offer">Oso offre au comptant</string>
+
+    <!--///////////////////////////////need to change/////////////////////////////////-->
+    <string name="list_home">Liste Maison Maintenant</string>
+    <string name="following">Suivant</string>
+    <string name="profile_type">Type De Profil</string>
+    <string name="sel_pro_type">Veuillez sélectionner le type de profil</string>
+    <string name="follow">Suivre</string>
+    <string name="followers">Followers</string>
+    <string name="follow_request">Suivre Demande</string>
+    <string name="both_auction_amp_fixed"><![CDATA[les deux(vente aux enchères & fixe)]]></string>
+    <string name="all">tout</string>
+    <string name="sugg1">Maison à aire ouverte, cuisine</string>
+    <string name="sugg2">Cette maison magnifique et presque parfaite vous étourdira avec ses finitions intérieures modernes et éblouissantes.</string>
+    <string name="sugg3">Bienvenue à la maison! Cette maison spacieuse et lumineuse à plusieurs niveaux avec un plan d\'étage ouvert</string>
+    <string name="sugg4"><![CDATA[Maison avec des plafonds voûtés & lucarnes mettre en tonnes de lumière naturelle]]></string>
+    <string name="sugg5">Magnifique maison de 4 chambres, 4 salles de bain avec 2,212 pieds carrés à Centennial! Fantastique Vue Sur Le Parc</string>
+    <string name="sugg6">à distance de marche des écoles de Cherry Creek.</string>
+    <string name="sugg7">Le quartier dispose d\'une piscine communautaire et la construction du parc</string>
+    <string name="sugg8">parc avec des sentiers de randonnée, et belle ceinture de verdure pour les activités de plein air</string>
+    <string name="dishwaser">Lave-vaisselle</string>
+    <string name="garbage_disposal">L\'Élimination Des Déchets</string>
+    <string name="refrigetor">Frigo</string>
+    <string name="lockable_storage">Stockage Verrouillable</string>
+    <string name="cental_heating_air"><![CDATA[Chauffage Central Et Air]]></string>
+    <string name="lamps">Lampe</string>
+    <string name="energy_pan">fenêtres écoénergétiques</string>
+    <string name="kitchen_appliences">Appareils de cuisine en acier inoxydable</string>
+    <string name="build_in_microwaves">Micro-ondes intégrés</string>
+    <string name="energy_efficient">Éclairage écoénergétique</string>
+    <string name="built_in_Microwaves">Micro-ondes intégrés</string>
+    <string name="breakfast_nook">Coin petit-déjeuner</string>
+    <string name="pool">bassin</string>
+    <string name="countertops">Comptoirs</string>
+    <string name="quartz">Quartz</string>
+    <string name="granite">Granit</string>
+    <string name="laminate">Stratifié</string>
+    <string name="marble">Marbre</string>
+    <string name="cement">Ciment</string>
+    <string name="formica">Formica</string>
+    <string name="santa_celia">Santa Celia</string>
+    <string name="business_nmae">Nom de l\'entreprise</string>
+    <string name="buy_and_sell_property_here">Acheter et vendre une propriété ici</string>
+    <string name="terms_and_conditions_here">&quot;En continuant, vous acceptez les termes et conditions ici&quot;</string>
+    <string name="title_for_sale">Propriété de liste</string>
+    <string name="desc_open_house">Veuillez saisir une description de Open House Live</string>
+    <string name="offstreeet_parking">Stationnement hors rue disponible?</string>
+    <string name="val_pro_profile">plan devant de la maison requis</string>
+    <string name="msg_service_provider">Voulez-vous vous inscrire en tant que fournisseur de services?</string>
+    <string name="msg_hs">Cliquez ici pour vous inscrire en tant que spécialiste à domicile (HS)</string>
+    <string name="fixed">fixé</string>
+    <string name="offer_amount">Montant de l\'offre</string>
+    <string name="offer">Offre</string>
+    <string name="counter_offer">Contre-offre</string>
+    <string name="offer_price">Prix ​​de l\'offre: $</string>
+    <string name="offer_close">Offre fermée</string>
+    <string name="walkthrough_details">Procédure pas à pas</string>
+    <string name="agree">D\'accord</string>
+    <string name="disagree">Pas d\'accord</string>
+    <string name="confirm_your_reason">Confirmez votre raison</string>
+    <string name="new_date">Nouvelle date</string>
+    <string name="new_time">Nouveau temps</string>
+    <string name="error_select_date">Sélectionner une date</string>
+    <string name="schedule_date">Date prévue:-</string>
+    <string name="schedule_time">Heure prévue:-</string>
+    <string name="reason">S\'il vous plaît donner une courte description pour replanifier</string>
+    <string name="walk_through">Replanifier la procédure pas à pas</string>
+    <string name="protype">Type de propriété:- </string>
+    <string name="lvl_location">Location:-</string>
+    <string name="_30_days">30 jours</string>
+    <string name="_45_days">45 jours</string>
+    <string name="select_task_calender">Sélectionner le calendrier des tâches</string>
+    <string name="task_list">Liste de tâches</string>
+    <string name="change_date">changement de date</string>
+    <string name="service_list">Liste de service</string>
+    <string name="confirm_entered_password">Confirmer le mot de passe entré</string>
+    <string name="disclosures">Les divulgations</string>
+    <string name="fixtures">Agencements</string>
+    <string name="no_fixture">Aucun appareil trouvé!!</string>
+    <string name="offer_created_at">Offre créée à:-</string>
+    <string name="business_logo">LOGO D\'AFFAIRES</string>
+    <string name="features">Caractéristiques</string>
+    <string name="join_as_a_service_provider">Inscrivez-vous en tant que fournisseur de services</string>
+    <string name="join_as_a_home_specialist">Inscrivez-vous en tant que spécialiste à domicile</string>
+    <string name="find_service">Trouver un service</string>
+    <string name="front_shot">Vue frontale de la maison</string>
+    <string name="for_buy">Pour acheter</string>
+    <string name="my_current_bids">Mes offres actuelles</string>
+    <string name="my_rental_pro">Mes propriétés de location</string>
+    <string name="sqft">SqFt</string>
+    <string name="select_you_r_availability">Sélectionnez votre disponibilité</string>
+    <string name="_08_00_am_to_5_00_pm">08:00 AM to 5:00 PM</string>
+    <string name="_5_00_pm_12_00_am">5:00 PM - 12:00 AM</string>
+    <string name="you_r_availability">Votre disponibilité</string>
+    <string name="varified">Varifié</string>
+    <string name="not_varified">Non vérifié</string>
+    <string name="resend">Renvoyer</string>
+    <string name="i_m_looking_for_a">Je recherche un</string>
+    <string name="sel_pro_seller_type">Je suis un</string>
+    <string name="i_want_to_sell_a">Je veux vendre un</string>
+    <string name="what_type_sell">Quel type de vente est-ce?</string>
+    <string name="what_type_of_sale">Quel type de vente?</string>
+    <string name="my_pro_located">Ma propriété est située</string>
+    <string name="pro_snapshot">Instantané de propriété</string>
+    <string name="dis_optional">Documents importants pour votre maison Divulgations (Optionnel)</string>
+    <string name="desc_home">Décrivez votre propriété</string>
+    <string name="description_need_to_be_provided">description (besoin d\'être fourn)</string>
+    <string name="how_long_am_i_renting">Combien de temps je loue?</string>
+    <string name="any_restriction">Toute restriction?</string>
+    <string name="dogs_allow">Chiens, Chats, Poisson, Etc</string>
+    <string name="parking_comments">Garage, Couvert, Ouvert?</string>
+    <string name="rental">louer</string>
+    <string name="more_information_about_my_home">Plus D\'Informations Sur Ma Maison</string>
+    <string name="select_radius">Sélectionnez Rayon</string>
+    <string name="location_radius">Rayon De L\'Emplacement</string>
+    <string name="view_more_option">Voir Plus d\'option</string>
+    <string name="select_security_question">Choisir la question de sécurité</string>
+    <string name="answer">Réponse</string>
+    <string name="item_select_question">Sélectionnez La Question</string>
+    <string name="msg_select_security_question">Veuillez sélectionner la question de sécurité</string>
+    <string name="msg_provide_answer">Veuillez répondre à la question choisie</string>
+    <string name="internet_banking">Services bancaires par Internet</string>
+    <string name="faq">FAQ</string>
+    <string name="accept_term_and_condition">Je suis d\'accord Termes et Conditions</string>
+    <string name="msg_term">Accepter terme et condition avant paiement</string>
+    <string name="msg_make_offer_payment">Votre jeton initial ($1500), sera remboursé si vous ou le propriétaire de la maison refusez votre offre, vous pouvez demander un remboursement, le support de l\'OS vous contactera</string>
+    <string name="pay_1500_and_start_offer">Payer 1500 $ et offre de départ</string>
+    <string name="credit_debit">Credit/Debit</string>
+    <string name="ach_payment">Paiement ACH </string>
+    <string name="select_language">Choisir la langue</string>
+    <string name="language_english">Anglais</string>
+    <!--<string name="how_long_am_i_renting">Combien de temps je loue?</string>-->
+
+
+    <string-array name="bedroom">
+        <!-- <item>Select No. of bedrooms</item>-->
+        <item>1 chambre</item>
+        <item>2 chambres</item>
+        <item>3 chambres</item>
+        <item>4 chambres</item>
+        <item>5 chambres</item>
+        <item>5+ chambres</item>
+    </string-array>
+
+
+    <string-array name="bathroom">
+        <!--   <item>Select No. of bathrooms</item>-->
+        <item>1 chambre</item>
+        <item>2 chambres</item>
+        <item>3 chambres</item>
+        <item>4 chambres</item>
+        <item>5 chambres</item>
+        <item>5+ chambres</item>
+    </string-array>
+
+    <string-array name="type">
+        <!-- <item>Type</item>-->
+        <item>domicile</item>
+        <item>Flat</item>
+        <item>Commercial</item>
+        <item>Condominium</item>
+        <item>Single Family</item>
+        <item>Townhouse</item>
+        <item>Semi-detached House</item>
+        <item>Duplex/Triplex</item>
+    </string-array>
+
+
+    <string-array name="propretor">
+        <item>entreprise individuelle</item>
+        <item>LLC</item>
+        <item>la Corporation</item>
+    </string-array>
+
+
+    <string-array name="miles">
+        <item>5 miles</item>
+        <item>10 miles</item>
+        <item>20 miles</item>
+        <item>30 miles</item>
+        <item>50 miles</item>
+        <item>100 miles</item>
+    </string-array>
+
+    <string-array name="array_days">
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Jeu</item>
+        <item>Ven</item>
+        <item>Sam</item>
+        <item>Dim</item>
+    </string-array>
+
+
+    <string-array name="array_redius">
+        <item>0.5</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1000 + </item>
+    </string-array>
+    <string name="Cerca">proche</string>
+    <string name="Chat">bavarder</string>
+    <string name="Dob">DOB</string>
+    <string name="Detalle">détails</string>
+    <string name="videofalled">la vidéo a échoué</string>
+    <string name="vender">Non vendu</string>
+    <string name="postdescripción">Description du service</string>
+    <string name="cardNumber">Entrez votre numéro de carte à 16 chiffres</string>
+    <string name="Zip">code postal</string>
+    <string name="Youremail_gmail_com">votrecourrier@gmail.com</string>
+    <string name="Video_upload">Télécharger une video</string>
+    <string name="Video">"video "</string>
+    <string name="Val_virthual_tour">Visite virtuelle non disponible</string>
+    <string name="Chimney">Cheminée</string>
+    <string name="Completado">Terminé</string>
+    <string name="Condominio">Condominium</string>
+    <string name="Cvv">CVV</string>
+    <string name="Descripción">Description (legend)</string>
+    <string name="Documentos">Document</string>
+    <string name="Duplex">Duplex/Triplex</string>
+    <string name="FULL_NAME">Nom complet</string>
+    <string name="Fecha_final">Date de fin</string>
+    <string name="First_name">Prénom</string>
+    <string name="Login">S\'identifier</string>
+    <string name="Notificación">Notification</string>
+    <string name="Progreso">le progrès</string>
+    <string name="Ques_neightbourhood">Quels quartiers préférez-vous acheter??</string>
+    <string name="Val_buss_cat">Sélectionnez le nom de la catégorie d\'entreprise</string>
+    <string name="Val_min_budget">Entrez votre budget minimum</string>
+    <string name="Val_start_buss">Entrez comment l\'entreprise démarre</string>
+    <string name="Val_video">Cliquez sur télécharger la vidéo pour charger la vidéo sélectionnée.</string>
+    <string name="select_currency">Sélectionner La Devise</string>
+    <string name="web_server_client_id">203673957512-efcb2k5fguc5a5cq1jpnbq0is1599hde.apps.googleusercontent.com</string>
+    <string name="french">Française</string>
+    <string name="search_by_country_name_or_currency_code">Recherche par nom de pays, nom de devise ou code</string>
+    <string name="cancel_drawing">annuler le dessin</string>
+    <string name="title_activity_maps">Carte</string>
+    <string name="error_select_currency">Sélectionnez d\'abord une devise</string>
+    <string name="spanish">Spanish</string>
+
+</resources>

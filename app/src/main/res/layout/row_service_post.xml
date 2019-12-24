@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_5sdp"
+    app:contentPadding="@dimen/_7sdp">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/date_time"
+            android:text="@string/service_post"/>
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/grey_500"
+            android:textStyle="italic"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="@string/service_post"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="@color/black"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:layout_below="@+id/service_name"
+            android:text="@string/dummy"/>
+
+        <Button
+            android:id="@+id/bid"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/description"
+            android:text="@string/level_bid"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:background="@drawable/round_btn_solid"/>
+
+        <Button
+            android:id="@+id/pending"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/description"
+            android:text="@string/pending"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:background="@drawable/round_button_fad"/>
+
+
+        <Button
+            android:id="@+id/awarded"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/description"
+            android:text="@string/awarded"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:background="@drawable/round_btn_solid"/>
+
+        <TextView
+            android:id="@+id/bid_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toRightOf="@+id/bid"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="@string/service_post"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

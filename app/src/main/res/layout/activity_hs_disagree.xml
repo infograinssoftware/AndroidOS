@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/confirm_your_reason"
+        android:textSize="@dimen/_14sdp" />
+
+    <EditText
+        android:id="@+id/edit_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:gravity="start"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/background_white"
+        android:inputType="textMultiLine"
+        android:lines="7"
+        android:textSize="@dimen/_12sdp"
+        android:maxLength="350" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/new_date"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/background_white"
+        android:drawableEnd="@drawable/calendar"
+        android:maxLength="300"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/new_time"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/edit_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/background_white"
+        android:drawableEnd="@drawable/clock"
+        android:maxLength="300"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp" />
+
+
+    <TextView
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+
+
+</LinearLayout>

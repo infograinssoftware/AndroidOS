@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/h_toolbar"
+        android:elevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/click_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="end"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invite"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/gray_slat"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:hint="@string/search_people"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:paddingStart="@dimen/_10sdp" />
+
+
+        <ImageView
+            android:id="@+id/btnsearch"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/searchuser" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

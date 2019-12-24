@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_buy"
+        android:icon="@drawable/navi_buy"
+        android:title="@string/title_buy" />
+
+    <item
+        android:id="@+id/navigation_rent"
+        android:icon="@drawable/rent_gray"
+        android:title="@string/title_rent" />
+
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navigation_sell"
+        android:icon="@drawable/sell_bt"
+        android:title="@string/title_for_sale" />
+
+    <item
+        android:id="@+id/navigation_you"
+        android:icon="@drawable/you"
+        android:title="@string/title_you" />
+
+</menu>

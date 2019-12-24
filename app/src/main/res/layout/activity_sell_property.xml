@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sell" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardElevation="3dp"
+                app:contentPadding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_your_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_information"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lay_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_your_info"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/ctv_first_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/first_name"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11sdp" />
+
+                            <EditText
+                                android:id="@+id/cet_first_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctv_first_name"
+                                android:hint="@string/first_name_small"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="25"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/ctv_last_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/last_name"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11sdp" />
+
+                            <EditText
+                                android:id="@+id/cet_last_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ctv_last_name"
+                                android:hint="@string/last_name_small"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ctv_your_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay_first_name"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center|start"
+                        android:text="@string/enter_your_contact_no"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <EditText
+                        android:id="@+id/cet_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_your_contact"
+                        android:hint="@string/contact_number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="12"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_sell_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_info"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardElevation="3dp"
+                app:contentPadding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_sell_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sel_pro_seller_type"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_sell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_sell_type"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rb_owners"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:imeOptions="actionNext"
+                            android:text="@string/owners"
+                            android:textColor="@drawable/radio_selection"
+                            android:theme="@style/RadioButton_Background" />
+
+                        <RadioButton
+                            android:id="@+id/rb_agent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:imeOptions="actionNext"
+                            android:text="@string/agent"
+                            android:textColor="@drawable/radio_selection"
+                            android:theme="@style/RadioButton_Background" />
+
+                        <RadioButton
+                            android:id="@+id/rb_investor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:imeOptions="actionNext"
+                            android:text="@string/investor"
+                            android:textColor="@drawable/radio_selection"
+                            android:theme="@style/RadioButton_Background" />
+
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_sell_type"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                app:cardElevation="3dp"
+                app:contentPadding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/post"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_private"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_post"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/stw_private"
+                        android:gravity="center|start"
+                        android:text="@string/privates"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_private"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_post"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="12dp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_post"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="3dp"
+                app:contentPadding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_purpose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/what_type_sell"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_for_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_purpose"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/stw_for_sale"
+                        android:gravity="center|start"
+                        android:text="@string/for_sale"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_for_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_purpose"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/ctv_forclosure_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_for_sale"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_forclosure_sale"
+                        android:gravity="center|start"
+                        android:text="@string/foreclosure_sale"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_forclosure_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_for_sale"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_short_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_forclosure_sale"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_short_sale"
+                        android:gravity="center|start"
+                        android:text="@string/short_sale"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_short_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_forclosure_sale"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_sell_by_ownwer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_short_sale"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_sell_by_ownwer"
+                        android:gravity="center|start"
+                        android:text="@string/for_sell_by_owner"
+                        android:textColor="@color/grey_600"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_sell_by_ownwer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_short_sale"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/ctv_for_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_sell_by_ownwer"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_for_sale"
+                        android:gravity="center|start"
+                        android:text="@string/rental"
+                        android:visibility="gone"
+                        android:textColor="@color/grey_600"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_for_rent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_sell_by_ownwer"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/ctv_wanted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_for_rent"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_wanted"
+                        android:gravity="center|start"
+                        android:text="@string/wanted"
+                        android:textColor="@color/grey_600"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_wanted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_for_rent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_purpose"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardElevation="3dp"
+                app:contentPadding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_want_to_sell_a"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+
+                    <TextView
+                        android:id="@+id/ctv_single_family"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_type"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/stw_SingleFamily"
+                        android:gravity="center|start"
+                        android:text="@string/single_family"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_SingleFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_type"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/ctv_Townhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_single_family"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center|start"
+                        android:text="@string/town_house"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_Townhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_single_family"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp" />
+
+
+                    <TextView
+                        android:id="@+id/ctv_Condominium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_Townhouse"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_Condominium"
+                        android:gravity="center|start"
+                        android:text="@string/condominium"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_Condominium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_Townhouse"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_flat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_Condominium"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_flat"
+                        android:gravity="center|start"
+                        android:text="@string/flat"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_flat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_Condominium"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_Duplex_Triplex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_flat"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center|start"
+                        android:text="@string/duplex"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_Duplex_Triplex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_flat"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp" />
+
+
+                    <TextView
+                        android:id="@+id/ctv_plot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_Duplex_Triplex"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_plot"
+                        android:gravity="center|start"
+                        android:text="@string/plot"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_plot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_Duplex_Triplex"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp" />
+
+
+                    <TextView
+                        android:id="@+id/ctv_commercial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_plot"
+                        android:layout_marginTop="11dp"
+                        android:layout_toLeftOf="@+id/stw_commercial"
+                        android:gravity="center|start"
+                        android:text="@string/commercial"
+                        android:textColor="@color/grey_600" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_commercial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_plot"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/ctv_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_type"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@+id/stw_home"
+                        android:gravity="center|start"
+                        android:text="@string/home"
+                        android:textColor="@color/grey_600"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_type"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/ctv_Semi-detached_House"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_Townhouse"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center|start"
+                        android:text="@string/semi_detached_house"
+                        android:textColor="@color/grey_600"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/stw_Semi_detached_House"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ctv_Townhouse"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_type"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardElevation="3dp"
+                app:contentPadding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_pro_located"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/cet_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:hint="@string/your_selected_location_here"
+                        android:background="@color/transparent"
+                        android:focusable="false"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorPrimary" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/title_society"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/state"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/cet_society"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:hint="@string/state"
+                                android:textSize="14dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@color/colorPrimary" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/title_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/city"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/cet_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:hint="@string/city"
+                                android:textSize="14dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@color/colorPrimary" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_location"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                app:cardElevation="3dp"
+                app:contentPadding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rent_your_property"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/layout_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/how_long_am_i_renting"
+                            android:textSize="14dp" />
+
+                        <RadioGroup
+                            android:id="@+id/rent_selection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/vacation_renter" />
+
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/long_term_renter" />
+                        </RadioGroup>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/rent_amount"
+                            android:textColor="@color/grey" />
+
+                        <EditText
+                            android:id="@+id/edit_rent_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/pets_allowed"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_pets"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/edit_desc_pets"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/dogs_allow"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/smoking_allowed"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_smoking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/edit_desc_smoking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/any_restriction"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/offstreeet_parking"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_parking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/edit_desc_parking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/parking_comments"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_other_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_rent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardElevation="3dp"
+                app:contentPadding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_other_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_snapshot"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_bedroom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ctv_bedroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/bedroom" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spin_bedroom"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/spn_back"
+                                android:drawSelectorOnTop="true"
+                                android:entries="@array/bedroom"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/Spinner" />
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@color/colorPrimary" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_bathroom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_bathroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/bathroom" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp">
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spin_bathroom"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/spn_back"
+                                android:drawSelectorOnTop="true"
+                                android:entries="@array/bathroom"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/Spinner" />
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:background="@color/colorPrimary" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/sqft" />
+
+
+                        <EditText
+                            android:id="@+id/et_areasquare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_48sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:hint="@string/area_in_sqft"
+                            android:inputType="numberDecimal"
+                            android:singleLine="true"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/btn_upload_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/card_other_info"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

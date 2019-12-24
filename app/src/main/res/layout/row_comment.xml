@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+    <com.open_source.util.CircleImageView
+        android:id="@+id/commentor_img"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/txt_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/commentor_img"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:text="mvxvxmnbmx" />
+
+    <TextView
+        android:id="@+id/txt_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_comment"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textSize="11dp"
+        android:layout_toRightOf="@+id/commentor_img"
+        android:text="12 sep, 2017"
+        android:textColor="@color/grey_600" />
+
+
+</RelativeLayout>

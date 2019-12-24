@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/notfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@drawable/nopropertyfound"/>
+
+    <ImageView
+        android:id="@+id/nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@drawable/nodatafound"/>
+
+    <ImageView
+        android:id="@+id/icon_hammer"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/worker" />
+
+</RelativeLayout>

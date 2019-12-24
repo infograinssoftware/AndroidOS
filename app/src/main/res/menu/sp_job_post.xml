@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bids"
+        android:icon="@drawable/serach_gray"
+        android:title="@string/my_bid" />
+
+    <item
+        android:id="@+id/awarded"
+        android:icon="@drawable/ic_awarded"
+        android:title="@string/awarded" />
+
+    <item
+        android:id="@+id/running"
+        android:icon="@drawable/ic_running"
+        android:title="@string/running" />
+
+    <item
+        android:id="@+id/completed"
+        android:icon="@drawable/ic_completed_tasks"
+        android:title="@string/completed" />
+
+</menu>

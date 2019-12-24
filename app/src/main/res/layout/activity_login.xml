@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/title_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/join_us_now"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/title_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_join"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/buy_and_sell_property_here"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/title_owner"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/round_btn_solid_fb"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic3"
+                android:layout_width="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/fb_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/continue_with_facebook"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/ic3"
+                android:textColor="@color/white"
+                android:textSize="14dp"/>
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@null"-->
+                <!--android:drawableLeft="@drawable/fb_white"-->
+                <!--android:gravity="center"-->
+                <!--android:minHeight="0dp"-->
+                <!--android:minWidth="0dp"-->
+                <!--android:text="@string/continue_with_facebook"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="@color/white" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btn_facebook"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_btn_solid_gmail"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic2"
+                android:layout_width="30dp"
+                android:layout_marginRight="5dp"
+                android:padding="4dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/google"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/continue_with_google"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/ic2"
+                android:textColor="@color/white"
+                android:textSize="14dp"/>
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@null"-->
+                <!--android:drawableLeft="@drawable/fb_white"-->
+                <!--android:gravity="center"-->
+                <!--android:minHeight="0dp"-->
+                <!--android:minWidth="0dp"-->
+                <!--android:text="@string/continue_with_google"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="@color/white" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btn_gmail"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_btn_solid_email"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic"
+                android:layout_width="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/email"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/continue_with_email"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/ic"
+                android:textColor="@color/white"
+                android:textSize="14dp"/>
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@null"-->
+                <!--android:drawableLeft="@drawable/email"-->
+                <!--android:gravity="center"-->
+                <!--android:minHeight="0dp"-->
+                <!--android:minWidth="0dp"-->
+                <!--android:text="@string/continue_with_email"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="@color/white" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_dealer"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btn_email"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:background="@drawable/round_btn_transparent_square"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic1"
+                android:layout_width="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/you_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/continue_with_dealer"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/ic1"
+                android:textColor="@color/white"
+                android:textSize="14dp"/>
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@null"-->
+                <!--android:drawableLeft="@drawable/email"-->
+                <!--android:gravity="center"-->
+                <!--android:minHeight="0dp"-->
+                <!--android:minWidth="0dp"-->
+                <!--android:text="@string/continue_with_dealer"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="@color/white" />-->
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ctv_terms_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/terms_and_conditions_here"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sell" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_45sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="8dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lay_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toLeftOf="@+id/icon_serach">
+
+                    <ImageView
+                        android:id="@+id/search"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/serach_black" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/title_location_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:background="@color/transparent"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+
+                <!-- <ImageView
+                     android:id="@+id/search"
+                     android:layout_width="25dp"
+                     android:layout_height="25dp"
+                     android:layout_marginTop="10dp"
+                     android:gravity="center"
+                     android:src="@drawable/serach_gray" />
+
+                 <TextView
+                     android:id="@+id/title_location_name"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_toLeftOf="@+id/ctv_filter"
+                     android:layout_toRightOf="@+id/search"
+                     android:textColor="@color/black"
+                     android:textSize="15dp" />-->
+
+                <ImageView
+                    android:id="@+id/icon_serach"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/filter" />
+               <!-- <TextView
+                    android:id="@+id/ctv_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/filter"
+                    android:textSize="14dp" />-->
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/fram_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txvButtonCancelDrawing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_search"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cancel_drawing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:background="@drawable/round_btn_solid"/>
+
+        <ImageView
+            android:id="@+id/icon_hs"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_above="@+id/icon_rent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/join_hs"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/icon_rent"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/rent_add"
+            android:visibility="gone" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_raduis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="70dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_radius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/radius_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_hs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_hs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    android:src="@drawable/hs_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_rent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/rent_add_new" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabLayout_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    app:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/location_reset_icon" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="13dp"
+                android:clipToPadding="false"
+                android:gravity="center_vertical"
+                android:padding="12dp">
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:scaleType="center"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/plus_icon_white" />
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/bottomsheet"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

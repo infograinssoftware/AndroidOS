@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/receipts_and_warranties" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/doc_attach"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/colorPrimary"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/upload"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/flowlayout"
+        app:flChildSpacing="auto"
+        app:flChildSpacingForLastRow="align"
+        app:flRowSpacing="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp" />
+
+
+</LinearLayout>

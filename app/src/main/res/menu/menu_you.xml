@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <!--   <item
+        android:id="@+id/changeCurrency"
+        android:title="Change Currency" />-->
+    <item
+        android:id="@+id/about"
+        android:title="@string/about" />
+    <item
+        android:id="@+id/contact_us"
+        android:title="@string/contact_us" />
+    <item
+        android:id="@+id/faq"
+        android:title="@string/faq" />
+    <item
+        android:id="@+id/privacy_policy"
+        android:title="@string/privacy_policy" />
+    <item
+        android:id="@+id/like_facebbook"
+        android:title="@string/like_us_on_facebook" />
+
+    <item
+        android:id="@+id/like_twitter"
+        android:title="@string/like_us_on_twitter" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout" />
+
+
+    <!--<item
+        android:id="@+id/offer"
+        android:title="@string/all_offer" />-->
+    <!--<item
+        android:id="@+id/delete_pro"
+        android:title="@string/delete_this_property" />
+    <item
+        android:id="@+id/likes"
+        android:title="@string/liked_by_users" />-->
+
+
+</menu>
